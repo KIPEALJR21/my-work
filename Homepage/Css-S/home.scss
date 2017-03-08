@@ -1,0 +1,197 @@
+$color-ogreen: #5c9186;
+$color-white: #E8DFCE;
+$color-greened: #7bafa4;
+$color-gray: #ececec;
+
+h1{
+   font-size: 2em;
+}
+h2{
+   font-size: 1.6em;
+}
+h3{
+   font-size: 1.4em;
+}
+h4{
+   font-size: 1.2em;
+}
+h5{
+   font-size: 1em;
+}
+h6{
+   font-size: 0.8em;
+}
+.sidemenu{
+    position:fixed;
+    top:0;
+    height:100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x:hidden;
+    background-color: $color-ogreen;
+    transition: 0.2s;
+    }
+.sidemenu a{
+    padding: 4px 4px 4px 30px;
+    display:block;
+    text-decoration: none;
+    color: beige;
+    transition: 0.1s;
+     border-bottom:1px solid $color-white;
+    line-height: 40px;
+    font-family: Arial;
+}
+.sideright{
+    position:fixed;
+    top:0;
+    right: 0;
+    height:100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x:hidden;
+    background-color: $color-ogreen;
+    transition: 0.2s;
+    }
+.sideright a{
+    padding: 4px 4px 4px 30px;
+    display:block;
+    text-decoration: none;
+    color: beige;
+    transition:right 0.3s;
+     border-bottom:1px solid $color-white;
+    line-height: 40px;
+    font-family: Arial;
+}
+.back-user{
+text-align: right;  
+}
+.log-us{
+    text-align: center;
+    h3{
+        color: $color-white;
+        padding-top: 10px;
+    }
+}
+.side-login{
+    padding: 0px 30px 30px 30px;
+}
+.in-user{
+background-color: transparent;
+border-radius: 5px;
+    border: 2px solid $color-greened;
+ padding: 8px 8px 8px 10px;
+    color: $color-white;
+    width: 100%;
+}
+.in-user::-webkit-input-placeholder{
+	color: $color-greened;
+}
+.in-user::-ms-input-placeholder{
+	color: $color-greened;
+}
+.in-user:-moz-input-placeholder{
+	color: $color-greened;
+}
+.nav-mobile li{
+width: 150px;
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+}
+
+.fa-bars,
+.fa-search,
+.fa-user,
+.fa-shopping-bag{
+color: $color-white;
+}
+
+.effect-src{
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid $color-greened;
+    border-color: $color-greened;
+    background-image: url(../img/search.png);
+    background-position: 11px 8px;
+    background-size: 25px;
+    background-color: transparent;
+    border-radius: 100px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    padding: 7px 15px 7px 50px;
+-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    color: $color-white;
+}
+.effect-src::-webkit-input-placeholder{
+	color: $color-greened;
+}
+.effect-src::-ms-input-placeholder{
+	color: $color-greened;
+}
+.effect-src:-moz-input-placeholder{
+	color: $color-greened;
+}
+#tsrc{
+display: none;
+}
+.effect-src:focus {
+width: 100%;
+}
+.padding{
+padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.margin{
+margin: 0 -25px;
+}
+.test {
+  margin: 0 auto;
+  width: 1000px;
+}
+.carousel-indicators li{
+    position:relative;
+    max-width:12px;
+    height:12px;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    cursor:pointer;
+    background-color:rgba(255,255,255,.3)
+}
+.carousel-indicators .active{
+    background-color: $color-greened;
+    border: 1px solid $color-ogreen;
+}
+.bg-gray{
+background-color: $color-gray;
+}
+.bg-whites{
+ background-color: $color-white;
+}
+.bg-ogreen{
+background-color: $color-greened;
+}
+.bg-bgreen{
+background-color: $color-ogreen;
+}
+.border-b{
+border-bottom: 1px solid $color-white;
+}
+.border-t{
+border-top: 1px solid $color-white;
+}
+.btn-view{
+background-color: transparent;
+    border-color: $color-greened;
+    color: $color-greened;
+}
+.pro-down{
+ text-align: center;
+    width: 100%;
+    background-color: $color-ogreen;
+}
+
+.pro-down ul{
+list-style: none;
+    padding: 0;
+}
