@@ -1,0 +1,491 @@
+$color-white: #E8DFCE;
+$color-greenold: #5c9186;
+$color-greenday: #7bafa4;
+$color-gray: #ECECEC;
+$color-graymid: #d9d9d9;
+$color-grayold: #9f9f9f;
+$color-font-black:#292b2c;
+$color-whitemid: #eaeaea;
+$color-putih: #fdfdfd;
+$color-pold: #ffffff;
+$color-red: #d9534f;
+$color-blue: #0275d8;
+
+@mixin shadow-bottom($bottom){
+    -webkit-box-shadow: $bottom;
+	   -moz-box-shadow: $bottom;
+	        box-shadow: $bottom;
+}
+@mixin shadow-top($top){
+    -webkit-box-shadow: $top;
+	   -moz-box-shadow: $top;
+	        box-shadow: $top;
+}
+
+.padding{
+padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+.margin{
+margin: 0 -25px;
+}
+
+.color-font-{
+    
+    &black{
+        color: $color-font-black
+    }
+    
+    &green{
+        color: $color-greenold
+    }
+    
+    &white{
+        color: $color-putih
+    }
+    
+    &red{
+        color: $color-red
+    }
+    
+    &blue{
+        color: $color-blue
+    }
+}
+
+.sidemenu{
+    position:fixed;
+    top:0;
+    height:100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x: hidden;
+    background-color: $color-pold;
+    opacity: 30px;
+    transition: 0.1s;
+    
+    .nav-home{
+        background-color: $color-greenday;
+        color: $color-putih;
+        padding: 0.8em 1.5em 0.8em 1.5em;
+        transition: 0.1s;
+        
+        h6{
+            text-align: right;
+        }
+    }   
+    
+     a{
+    padding: 4px 4px 4px 30px;
+    display: block;
+    text-decoration: none;
+    color: $color-font-black;
+    transition: 0.1s;
+     border-bottom:1px solid $color-white;
+    line-height: 40px;
+    font-family: Arial;
+        }
+    
+}
+
+
+
+.nav-logo{
+    background-color: $color-white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    
+    img{
+    width: 120px;
+    height: 50px;
+    }
+}
+
+.nav-review{
+    position: fixed;
+    top:0;
+    height:100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x:hidden;
+    background-color: $color-putih;
+    transition:right 0.1s;
+    
+}
+
+.content-search{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x: hidden;
+    background-color: $color-greenday;
+    transition:top 0.2s;
+}
+
+.search-back{
+    padding: 1em 0 0 1em;
+    
+    i{
+    color: $color-putih;   
+    }
+}
+
+.input-search{
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid $color-whitemid;
+    background-image: url(../img/search.png);
+    background-position: 10px 8px;
+    background-size: 25px;
+    background-color: transparent;
+    border-radius: 80px;
+    font-size: 16px;
+    margin: 0.3em 1em;
+    background-repeat: no-repeat;
+    padding: 7px 20px 7px 50px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    color: $color-putih;
+    
+    &:focus{
+        width: 80%
+    }
+
+}
+
+.input-search::-webkit-input-placeholder{
+	color: $color-greenold;
+}
+.input-search::-ms-input-placeholder{
+	color: $color-greenold;
+}
+.input-search:-moz-input-placeholder{
+	color: $color-greenold;
+}
+
+.review-top{
+        background-color: $color-greenday;
+        padding: 0.8em 1em 0.8em 1em;
+        color: $color-putih;
+    li{
+        width: 50%
+    }
+    .back-review{
+        text-align: right;
+    }
+    }
+
+.nav-menu{
+    background-color: $color-greenday;
+    li{
+        width: 150px;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        color: $color-gray;
+    }
+}
+.nav-back{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    background-color: $color-gray;
+    
+    li{
+        float: left;
+        padding: 1em 0em 1em 1em;
+        text-align: center; 
+    }
+    
+    a{
+         color: $color-font-black         
+    }
+    
+    .active{
+        color: $color-grayold
+    }
+}
+
+.review-content{
+    margin: 0 auto;
+    padding: 0.5em 0 0.5em;
+}
+
+.comment-content{
+    height: 150px;
+    border: 1px solid $color-graymid;
+    border-radius: 5px;
+    padding: 0.3em 0.7em;
+    margin: 0 auto;
+    background-color: $color-gray;
+    
+    p{
+        margin: 0;
+    }
+}
+
+.foot-review{
+    margin: 0 auto;
+    
+    p{
+        margin: 0;
+    }
+}
+.swiper-container{
+        width: 100%;
+        height: 100%; 
+        margin: 0 auto;
+    padding: 0;
+}
+
+.bg-gray{
+    background-color: $color-gray;
+}
+
+.bg-green{
+    background-color: $color-greenday;
+}
+
+.bg-white{
+    background-color: $color-white;
+}
+
+.bg-whitemid{
+    background-color: $color-whitemid;
+}
+
+.shadow-bottom{
+    @include shadow-bottom(0 0px 12px -4px); 
+}
+
+.bg-putih{ 
+    background-color: $color-putih;
+}
+
+.border-bottom{
+    border: 1px solid $color-white;
+}
+
+.border-review{
+    border-bottom: 1px solid $color-graymid;
+}
+
+.b-content{
+    border-bottom: 1px solid $color-graymid;
+}
+
+.low-font{
+    font-size: 16px;
+}
+
+.low-font2{
+    font-size: 16px;
+    text-decoration: line-through;
+    padding-left: .5em;
+    color: $color-red;
+}
+
+.discount-off{
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    color: $color-putih;
+    font-size: 60%;
+    font-weight: 600;
+    background-color: $color-greenday;
+    border-radius: 15px;
+    margin: 0 0 0 0.6em;
+}
+
+.input-quan{
+    width: 60px;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid $color-grayold;
+}
+.border-quantity{
+    border-right: 1px solid $color-grayold;
+}
+.p-rate{
+    margin: 0 auto;
+}
+.btn-full{
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bolder
+}
+
+.btn-full-cart{
+    @extend .btn-full;
+    
+    background-color: $color-font-black;
+    color: $color-putih;
+}
+
+.btn-full-buy{
+    @extend .btn-full;
+    
+    border: 1px solid $color-grayold;
+    background-color: $color-putih;
+    color: $color-font-black;
+}
+.choose{
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 10px 5px 20px 5px;
+}
+.choose1{
+    @extend .choose;
+}
+.choose2{
+    @extend .choose;
+}
+.choose3{
+    @extend .choose;
+}
+.choose4{
+    @extend .choose;
+    border: 1px solid $color-grayold;
+}
+.chs-size{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid $color-grayold;
+    width: 40px;
+    height: 40px;
+    margin: 10px 5px 20px 5px;
+    padding: 8px 9px;;
+    color: $color-grayold;
+}
+.chs-size1{
+    @extend .chs-size;
+}
+.chs-size2{
+    @extend .chs-size;
+}
+.chs-size3{
+    @extend .chs-size;
+}
+.chs-size4{
+    @extend .chs-size;
+}
+
+.img-follow{
+    width: 45px;
+    height: auto;
+    margin: 3px 3px;
+}
+
+.detail-head{
+    padding: 0.7em 0.5em 0.4em 1em;
+    background-color: $color-putih;
+    border-bottom: 1px solid $color-graymid;
+    a{
+        color: $color-grayold;
+    }
+    
+}
+
+.detail-content{
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: $color-gray
+}
+
+.text-signup{
+    color: $color-putih;
+}
+.input-signup{
+    
+    input{
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+        background-color: white;
+        padding: 8px 15px 8px 15px;
+        font-family: arial;
+        font-size: 16px;
+        color: $color-greenold;
+    }
+}
+.btn-signup{
+    background-color: $color-font-black;
+    color: $color-gray;
+    border-radius: 0 10px 10px 0;
+}
+
+.content-related{
+    padding: 0 1.3em 0.7em 1.3em;
+  
+}
+
+.view-product{
+    padding: 1em 1em;
+}
+
+.img-product{
+    padding: 0.5em 0.5em;
+    width: 100%;
+    height: 100%;
+}
+
+.more-product{
+    border-radius: 5px;
+    background-color: $color-greenday;
+    width: 400px;
+}
+
+.barkot-produk{
+    
+    .like{
+        width: 30%;
+        color: $color-red
+    
+    }
+    .rate-satu{
+         width: 70%;
+    }
+}
+
+.price{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0.3em 0 0.3em 0;
+    color: $color-blue
+}
+
+.content-barkot{
+    padding: 0.6em;
+      border-top: 1px solid $color-graymid;
+    background-color: $color-gray
+}
+
+.footer-link{
+    
+    li{
+        text-align: center;
+        width: 200px;
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        color: $color-putih;
+    }
+}
+
+.border-right{
+    border-right: 1px solid $color-putih;    
+}
+
+.footer-company{
+    color: $color-font-black;
+}

@@ -1,0 +1,553 @@
+$color-white: #E8DFCE;
+$color-greenold: #5c9186;
+$color-greenday: #7bafa4;
+$color-gray: #ECECEC;
+$color-graymid: #d9d9d9;
+$color-grayold: #9f9f9f;
+$color-font-black:#292b2c;
+$color-whitemid: #eaeaea;
+$color-putih: #fdfdfd;
+$color-pold: #ffffff;
+$color-red: #d9534f;
+$color-blue: #0275d8;
+$color-cyan: #5bc0de;
+$color-hijau: #17d910;
+$color-hijau-tua: #034a00;
+
+@mixin shadow-bottom($bottom){
+    -webkit-box-shadow: $bottom;
+	   -moz-box-shadow: $bottom;
+	        box-shadow: $bottom;
+}
+
+@mixin shadow-show($show){
+    -webkit-box-shadow: $show;
+	   -moz-box-shadow: $show;
+	        box-shadow: $show;
+}
+
+.padding{
+padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+.margin{
+margin: 0 -25px;
+}
+
+.color-font-{
+    
+    &black{
+        color: $color-font-black
+    }
+    
+    &green{
+        color: $color-greenold
+    }
+    
+    &white{
+        color: $color-putih
+    }
+    
+    &red{
+        color: $color-red
+    }
+    
+    &blue{
+        color: $color-blue
+    }
+    &gray{
+        color: $color-grayold
+    }
+}
+
+.sidemenu{
+    position:fixed;
+    top:0;
+    height:100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x: hidden;
+    background-color: $color-pold;
+    opacity: 30px;
+    transition: 0.1s;
+    
+    .nav-home{
+        background-color: $color-greenday;
+        color: $color-putih;
+        padding: 0.7em 1.2em 0.7em 1.2em;
+        transition: 0.1s;
+        
+        h5{
+            text-align: center
+        }
+    }   
+    
+     a{
+    padding: 4px 4px 4px 30px;
+    display: block;
+    text-decoration: none;
+    color: $color-font-black;
+    transition: 0.1s;
+     border-bottom:1px solid $color-white;
+    line-height: 40px;
+    font-family: Arial;
+        }
+    
+}
+
+.filtering{
+    position:fixed;
+    top:0;
+    height:100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x: hidden;
+    background-color: $color-pold;
+    transition: 0.1s;
+    
+    .top-filter{
+        background-color: $color-greenday;
+        padding: 0.7em 1em 0.7em 1em;
+        color: $color-putih;
+    }
+
+}
+
+.content-filter{
+        padding: 1em 1em;
+}
+
+.harga-mix{
+    padding-bottom: 1em;
+        
+    .input-harga{
+        width: 150px;
+        border-radius: 5px;
+        margin: 0 auto;
+        border: 1px solid $color-graymid;
+        background-color: $color-gray;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+}
+
+.content-rating{
+    padding-bottom: 1em;
+    
+    .c-rate{
+        margin: 0 auto;
+    }
+    
+}
+
+.kategori-pilih{
+    list-style: none;
+    padding: 0.5em 0 0.5em 0;
+    
+    li{
+        padding: 0.5em 0.5em;
+        border-bottom: 1px solid $color-graymid;
+    }
+}
+
+.apply{
+    background-color: $color-font-black;
+    padding: 0.7em 0.7em;
+    text-align: right;
+    
+    .btn-apply{
+        padding: 0.4em 1.4em;
+        margin: 0em 1em;
+        background-color: $color-putih;
+        border-radius: 5px;
+        font-weight: 500;
+        border: 1px solid $color-graymid;
+    }
+}
+
+
+.sorting{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x: hidden;
+    background-color: $color-pold;
+   
+    .head-sort{
+        background-color: $color-greenday;
+        padding: 0.5em 0.7em 0.5em 0.7em;
+        color: $color-putih;
+    }
+}
+
+.my-brand{
+
+    .section {
+        padding: 1em 1em 1em 2.5em;
+}
+.section input[type="radio"],
+.section input[type="checkbox"]{
+  display: none;
+}
+.container {
+  margin-bottom: 10px;
+}
+.container label {
+  position: relative;
+    font-weight: 600;
+}
+
+/* Base styles for spans */
+.container span::before,
+.container span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+    
+.container span.checkbox::before {
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  left: -35px;
+  box-sizing: border-box;
+  border: 3px solid $color-gray;
+  transition: border-color .2s;
+}
+.container span.checkbox:hover::before {
+  border: 3px solid $color-graymid;
+}
+
+.container span.checkbox::after {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  left: -30px;
+  top: 0px;
+  color: transparent;
+  transition: color .2s;
+}
+   
+    input[type="checkbox"]:checked + label span.checkbox::after {
+  color: $color-greenold;
+}
+    
+}
+
+.nav-logo{
+    background-color: $color-white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    
+    img{
+    width: 120px;
+    height: 50px;
+    }
+}
+
+
+.content-search{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x: hidden;
+    background-color: $color-greenday;
+    transition:top 0.2s;
+}
+
+.search-back{
+    padding: 1em 0 0 1em;
+    
+    i{
+    color: $color-putih;   
+    }
+}
+
+.input-search{
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid $color-whitemid;
+    background-image: url(../img/search.png);
+    background-position: 10px 8px;
+    background-size: 25px;
+    background-color: transparent;
+    border-radius: 80px;
+    font-size: 16px;
+    margin: 0.3em 1em;
+    background-repeat: no-repeat;
+    padding: 7px 20px 7px 50px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    color: $color-putih;
+    
+    &:focus{
+        width: 80%
+    }
+
+}
+
+.input-search::-webkit-input-placeholder{
+	color: $color-greenold;
+}
+.input-search::-ms-input-placeholder{
+	color: $color-greenold;
+}
+.input-search:-moz-input-placeholder{
+	color: $color-greenold;
+}
+
+.nav-menu{
+    background-color: $color-greenday;
+    li{
+        width: 150px;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        color: $color-gray;
+    }
+}
+.nav-back{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    background-color: $color-gray;
+    
+    li{
+        float: left;
+        padding: 1em 0em 1em 1em;
+        text-align: center; 
+    }
+    
+    a{
+         color: $color-font-black         
+    }
+    
+    .active{
+        color: $color-grayold
+    }
+}
+
+.result{
+    padding: 0.7em 1em 0.7em 1em;
+    
+    h5{
+        margin-bottom: 0;
+    }
+    
+    p{
+        margin: 0;
+        font-weight: 400
+    }
+}
+
+.nav-pilih{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-align: center;
+    
+    p{
+        margin: 0;
+        font-weight: 600;
+        
+         &:hover{
+            color: $color-grayold;
+            text-decoration: none;
+        }
+    }
+}
+
+.my-show{
+    border: 1px;
+    
+input[type=radio]{
+    display: none;
+    }
+    
+input[type=radio] + label{
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 12px;
+    background-color: $color-font-black;
+    border-color: $color-gray;
+    color: $color-putih;
+    cursor: pointer;
+    }
+    
+input[type=radio]:checked + label {
+    @include shadow-show(inset 0 4px 8px rgba(0,0,0,0.3));
+    
+    background-image: none;
+    outline: 0;
+    background-color:$color-gray;
+    color: $color-font-black
+}
+}
+
+.bg-gray{
+    background-color: $color-gray;
+}
+
+.bg-green{
+    background-color: $color-greenday
+}
+
+.bg-white{
+    background-color: $color-white
+}
+
+.bg-whitemid{
+    background-color: $color-whitemid
+}
+
+.bg-black{
+    background-color: $color-font-black
+}
+
+.bg-cyan{
+    background-color: $color-cyan;
+}
+
+.shadow-bottom{
+    @include shadow-bottom(0 0px 12px -4px); 
+}
+
+.bg-putih{ 
+    background-color: $color-putih;
+}
+
+.border-bottom{
+    border: 1px solid $color-white;
+}
+
+.b-content{
+    border-bottom: 1px solid $color-graymid;
+}
+
+.border-nav{
+    border-right: 1px solid $color-graymid
+}
+
+.img-follow{
+    width: 45px;
+    height: auto;
+    margin: 3px 3px;
+}
+
+
+.text-signup{
+    color: $color-putih;
+}
+.input-signup{
+    
+    input{
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+        background-color: white;
+        padding: 8px 15px 8px 15px;
+        font-family: arial;
+        font-size: 16px;
+        color: $color-greenold;
+    }
+}
+.btn-signup{
+    background-color: $color-font-black;
+    color: $color-gray;
+    border-radius: 0 10px 10px 0;
+}
+
+.content-product{
+    padding: 0 1.3em 0.7em 1.3em;
+  
+}
+
+.view-product{
+    padding: 1em 1em;
+}
+
+.img-product{
+    padding: 0.5em 0.5em;
+    width: 100%;
+    height: 100%;
+}
+
+.more-product{
+    border-radius: 5px;
+    background-color: $color-greenday;
+    width: 400px;
+}
+
+.barkot-produk{
+    
+    .like{
+        width: 30%;
+        color: $color-red
+    
+    }
+    .rate-satu{
+         width: 70%;
+         float: right
+    }
+}
+
+.price{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0.3em 0 0.3em 0;
+    color: $color-blue
+}
+
+.content-barkot{
+    padding: 0.6em;
+      border-top: 1px solid $color-graymid;
+    background-color: $color-putih
+}
+
+.rating {
+    width: 100px;
+    height: 30px;
+    position:relative;
+    float: right;
+}
+.stars {
+    width:100%;
+    height:100%;
+    background: url(http://i.stack.imgur.com/jOhrl.png);
+    z-index: 1003;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.back {
+    background : gold;
+    width:100%;
+    height:100%;
+}
+
+.footer-link{
+    
+    li{
+        text-align: center;
+        width: 200px;
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        color: $color-putih;
+    }
+}
+
+.border-right{
+    border-right: 1px solid $color-putih;    
+}
+
+.footer-company{
+    color: $color-font-black;
+}
+
+

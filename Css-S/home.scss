@@ -1,0 +1,220 @@
+$color-white: #E8DFCE;
+$color-greenold: #5c9186;
+$color-greenday: #7bafa4;
+$color-gray: #ECECEC;
+$color-graymid: #d9d9d9;
+$color-grayold: #9f9f9f;
+$color-font-black:#292b2c;
+$color-whitemid: #eaeaea;
+$color-putih: #fdfdfd;
+$color-pold: #ffffff;
+$color-red: #d9534f;
+$color-blue: #0275d8;
+$color-cyan: #5bc0de;
+$color-hijau: #17d910;
+$color-hijau-tua: #034a00;
+
+h1{
+   font-size: 2em;
+}
+h2{
+   font-size: 1.6em;
+}
+h3{
+   font-size: 1.4em;
+}
+h4{
+   font-size: 1.2em;
+}
+h5{
+   font-size: 1em;
+}
+h6{
+   font-size: 0.8em;
+}
+.sidemenu{
+    position:fixed;
+    top:0;
+    height:100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x: hidden;
+    background-color: $color-pold;
+    opacity: 30px;
+    transition: 0.1s;
+    
+    .nav-home{
+        background-color: $color-greenday;
+        color: $color-putih;
+        padding: 0.7em 1.2em 0.7em 1.2em;
+        transition: 0.1s;
+        
+        h5{
+            text-align: center
+        }
+    }   
+    
+     a{
+    padding: 4px 4px 4px 30px;
+    display: block;
+    text-decoration: none;
+    color: $color-font-black;
+    transition: 0.1s;
+     border-bottom:1px solid $color-white;
+    line-height: 40px;
+    font-family: Arial;
+        }
+    
+}
+
+.sideright{
+    position:fixed;
+    top:0;
+    height:100%;
+    z-index: 9999;
+    width: 0;
+    overflow-x:hidden;
+    background-color: $color-putih;
+    transition:right 0.1s;
+    
+}
+
+.head-user{
+    background-color: $color-greenday;
+    padding: 0.7em 1em 0.7em 1em;
+    color: $color-putih;
+}
+
+
+.side-login{
+    padding: 1em 1.5em 1em 1.5em;
+}
+
+.btn-login{
+    margin: 1em 0em;
+    background-color: $color-greenday;
+    color: $color-putih;
+    padding: 0.5em 1em;
+    border-radius: 7px;
+}
+
+.in-user{
+background-color: transparent;
+border-radius: 5px;
+    border: 2px solid $color-greenday;
+ padding: 8px 8px 8px 10px;
+    color: $color-greenold;
+    width: 100%;
+}
+.in-user::-webkit-input-placeholder{
+	color: $color-greenday;
+}
+.in-user::-ms-input-placeholder{
+	color: $color-greenday;
+}
+.in-user:-moz-input-placeholder{
+	color: $color-greenday;
+}
+.nav-mobile li{
+width: 150px;
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+}
+
+.fa-bars,
+.fa-search,
+.fa-user,
+.fa-shopping-bag{
+color: $color-white;
+}
+
+.effect-src{
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid $color-greenday;
+    border-color: $color-greenday;
+    background-image: url(../img/search.png);
+    background-position: 11px 8px;
+    background-size: 25px;
+    background-color: transparent;
+    border-radius: 100px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    padding: 7px 15px 7px 50px;
+-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    color: $color-white;
+}
+.effect-src::-webkit-input-placeholder{
+	color: $color-greenday;
+}
+.effect-src::-ms-input-placeholder{
+	color: $color-greenday;
+}
+.effect-src:-moz-input-placeholder{
+	color: $color-greenday;
+}
+#tsrc{
+display: none;
+}
+.effect-src:focus {
+width: 100%;
+}
+.padding{
+padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.margin{
+margin: 0 -25px;
+}
+.test {
+  margin: 0 auto;
+  width: 1000px;
+}
+.carousel-indicators li{
+    position:relative;
+    max-width:12px;
+    height:12px;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    cursor:pointer;
+    background-color:rgba(255,255,255,.3)
+}
+.carousel-indicators .active{
+    background-color: $color-greenday;
+    border: 1px solid $color-greenold;
+}
+.bg-gray{
+background-color: $color-gray;
+}
+.bg-whites{
+ background-color: $color-white;
+}
+.bg-ogreen{
+background-color: $color-greenday;
+}
+.bg-bgreen{
+background-color: $color-greenold;
+}
+.border-b{
+border-bottom: 1px solid $color-white;
+}
+.border-t{
+border-top: 1px solid $color-white;
+}
+.btn-view{
+background-color: transparent;
+    border-color: $color-greenday;
+    color: $color-greenday;
+}
+.pro-down{
+ text-align: center;
+    width: 100%;
+    background-color: $color-greenold;
+}
+
+.pro-down ul{
+list-style: none;
+    padding: 0;
+}

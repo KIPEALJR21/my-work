@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Produk kategori</title>
+        
+        <link rel="stylesheet" href="Css_Ext/bootstrap.min.css">
+        <link rel="stylesheet" href="Css-S/categori.css">
+        <link rel="stylesheet" href="Css_Ext/font-awesome.min.css">
+        <link rel="stylesheet" href="Css_Ext/swiper.min.css">
+        <link rel="stylesheet" href="Css_Ext/jquery.rateyo.min.css">
+        <link rel="stylesheet" href="Css_Ext/owl.carousel.min.css">
+        <link rel="stylesheet" href="Css_Ext/owl.theme.default.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+        
+    </head>
+    <body style="max-width:576px; margin:0 auto; padding:0;">
+
+    <div id="side-nav" class="sidemenu" style="max-width:576px; margin:0 auto; padding:0;">
+    <div class="nav-home">
+        <i class="fa fa-times float-left m-1" onclick="closeNav()"></i>
+        <h5>MENU</h5>
+    </div>
+    <a href="#">Home</a>
+    <a href="#">Categories</a>
+    <a href="#">Help</a>
+    <a href="#">chat</a>
+    </div>
+          
+               <div class="filtering" id="filter" style="max-width:576px; margin:0 auto; padding:0;">
+                   <div class="top-filter">
+                       <i class="fa fa-times float-left m-1" onclick="filterHide()"></i>
+                       <h5 class="text-center">Filters</h5>
+                   </div>
+                     
+                      <div class="content-filter">
+                       <div class="harga-mix">
+                           <h6>Harga</h6>
+                           <input class="input-harga" type="number" placeholder="Min">
+                           <input class="input-harga ml-2" type="number" placeholder="Max">
+                       </div>
+                       <div class="content-rating">
+                          <h6>Rating</h6>
+                           <div class="c-rate" id="rating-filter"></div>
+                       </div>
+                       <div class="content-kategori">
+                           <h6>Kategori</h6>
+                           
+                            <div class="p-2 my-brand">
+                         <section id="second" class="section">
+    <div class="container">
+      <input type="checkbox" name="sort" id="pria">
+      <label for="pria"><span class="checkbox">Fashion Pria</span></label>
+    </div>
+    <div class="container">
+      <input type="checkbox" name="sort" id="wanita">
+      <label for="wanita"><span class="checkbox">Fashion Wanita</span></label>
+    </div>
+    <div class="container">
+      <input type="checkbox" name="sort" id="hp">
+      <label for="hp"><span class="checkbox">Handphone & tablet</span></label>
+    </div>
+    <div class="container">
+      <input type="checkbox" name="sort" id="komlap">
+      <label for="komlap"><span class="checkbox">Komputer & Laptop</span></label>
+    </div>
+    <div class="container">
+      <input type="checkbox" name="sort" id="elektronik">
+      <label for="elektronik"><span class="checkbox">Elektronik</span></label>
+    </div>
+    <div class="container">
+      <input type="checkbox" name="sort" id="olahraga">
+      <label for="olahraga"><span class="checkbox">Olahraga</span></label>
+    </div>
+    <div class="container">
+      <input type="checkbox" name="sort" id="kamvid">
+      <label for="kamvid"><span class="checkbox">Kamera & Video</span></label>
+    </div>
+</section>
+                    </div>
+                           
+                       </div>
+                                  
+                       </div>
+                       <div class="apply">
+                           <button class="btn-apply">
+                               Apply
+                           </button>
+                       </div>
+                       
+               </div>
+                
+                <div class="sorting" id="sort" style="max-width:576px; margin:0 auto; padding:0;">
+                    <div class="head-sort">
+                        <i class="fa fa-times float-left m-1" onclick="sortHide()"></i>
+                       <h5 class="text-center">Sort</h5>
+                    </div>
+                    <div class="p-2 my-brand">
+                         <section id="second" class="section">
+    <div class="container">
+      <input type="checkbox" name="sort" id="laris">
+      <label for="laris"><span class="checkbox">Terlaris</span></label>
+    </div>
+    <div class="container">
+      <input type="checkbox" name="sort" id="baru">
+      <label for="baru"><span class="checkbox">Terbaru</span></label>
+    </div>
+    <div class="container">
+      <input type="checkbox" name="sort" id="populer">
+      <label for="populer"><span class="checkbox">Terpopuler</span></label>
+    </div>
+</section>
+                    </div>
+                </div>
+                
+        <div class="container-fluid bg-whitemid">
+
+            <div class="row">
+              <div class="col-12 nav-logo">
+               <a href="homepage.html">
+                <img src="img/toko.png" alt="tokoku">
+               </a>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-12 nav-menu">
+               <div class="row content-search" id="search" style="max-width:576px; padding:0;">
+                <div class="col-12 px-0">  
+                    <a class="search-back" onclick="searchHide()">
+                        <i class="fa fa-long-arrow-left"></i>
+                    </a>
+                    <input class="input-search" type="search" placeholder="search">
+                </div>
+            </div>
+                <ul class="nav">
+                    <li>
+                        <a onclick="openNav()">
+                        <i class="fa fa-bars fa-2x"></i>    
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="openSearch()">
+                        <i class="fa fa-search fa-2x"></i>    
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                        <i class="fa fa-cart-arrow-down fa-2x"></i>   
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                        <i class="fa fa-user fa-2x"></i>    
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-12 result bg-putih color-font-black shadow-bottom mb-2">
+                      <h5>RESULT FOR T-SHIRT</h5>
+                      <p class="color-font-gray">72 PRODUCT</p>
+                </div>
+            </div>
+             
+             <div class="row">
+                  <div class="col-12 px-0">
+                      <img class="img-fluid" src="img/t-shirt_top.png" alt="t-shirt">
+                  </div>
+             </div>
+             
+               <div class="row bg-putih nav-pilih shadow-bottom">
+                   <div class="col-4 border-nav px-0">
+                        <p class="color-font-red" onclick="sortNav()">Sort By <i class="fa fa-caret-right pl-2"></i></p>
+                   </div>
+                   <div class="col-4 border-nav px-0">
+                        <p class="color-font-blue" onclick="filterNav()">Filter By <i class="fa fa-caret-right pl-2"></i></p>
+                   </div>
+                   <div class="col-4 px-0 my-show">
+                    <input type="radio" id="show1" name="show" value="besar" checked>
+                     <label for="show1">
+                         <i class="fa fa-th-large"></i>
+                     </label>
+                     
+                     <input type="radio" id="show2" name="show" value="kecil">
+                     <label for="show2">
+                         <i class="fa fa-th-list"></i>
+                     </label>
+                   </div>
+                    
+               </div>  
+            
+             <div class="row">
+            <div class="col-12 content-product">
+               <div class="row">
+              
+               <div class="col-6 padding">
+                    <div class="card">
+                        <div class="img-product">
+                    <img class="card-img-top img-fluid" src="img/iqra%204.jpg">
+                        </div>
+                        <div class="content-barkot">
+                        <h5 class="color-font-black m-0">T-shirt</h5>
+                            <p class="price m-0">Rp. 300.000</p>
+                        <ul class="nav barkot-produk">
+                            <li class="like">
+                                <i class="fa fa-heart-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li class="rate-satu">
+                                
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 padding">
+                    <div class="card bg-faded">
+                    <div class="img-product">
+                    <img class="card-img-top img-fluid" src="img/iqra%202.jpg">
+                        </div>
+                        <div class="content-barkot">
+                        <h5 class="color-font-black m-0">T-shirt</h5>
+                            <p class="price m-0">Rp. 300.000</p>
+                            <ul class="nav barkot-produk">
+                            <li class="like">
+                                 <i class="fa fa-heart-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li class="rate-satu">
+                                
+                            </li>
+                        </ul>
+                            </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 padding">
+                    <div class="card">
+                        <div class="img-product">
+                    <img class="card-img-top img-fluid" src="img/iqra%204.jpg">
+                        </div>
+                        <div class="content-barkot">
+                        <h5 class="color-font-black m-0">T-shirt</h5>
+                            <p class="price m-0">Rp. 300.000</p>
+                        <ul class="nav barkot-produk">
+                            <li class="like">
+                                <i class="fa fa-heart-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li class="rate-satu">
+                              
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 padding">
+                    <div class="card bg-faded">
+                    <div class="img-product">
+                    <img class="card-img-top img-fluid" src="img/iqra%202.jpg">
+                        </div>
+                        <div class="content-barkot">
+                        <h5 class="color-font-black m-0">T-shirt</h5>
+                            <p class="price m-0">Rp. 300.000</p>
+                            <ul class="nav barkot-produk">
+                            <li class="like">
+                                 <i class="fa fa-heart-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li class="rate-satu">
+                               
+                            </li>
+                        </ul>
+                            </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 padding">
+                    <div class="card">
+                        <div class="img-product">
+                    <img class="card-img-top img-fluid" src="img/iqra%204.jpg">
+                        </div>
+                        <div class="content-barkot">
+                        <h5 class="color-font-black m-0">T-shirt</h5>
+                            <p class="price m-0">Rp. 300.000</p>
+                        <ul class="nav barkot-produk">
+                            <li class="like">
+                                <i class="fa fa-heart-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li class="rate-satu">
+                               
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 padding">
+                    <div class="card bg-faded">
+                    <div class="img-product">
+                    <img class="card-img-top img-fluid" src="img/iqra%202.jpg">
+                        </div>
+                        <div class="content-barkot">
+                        <h5 class="color-font-black m-0">T-shirt</h5>
+                            <p class="price m-0">Rp. 300.000</p>
+                            <ul class="nav barkot-produk">
+                            <li class="like">
+                                 <i class="fa fa-heart-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li class="rate-satu">
+                               
+                            </li>
+                        </ul>
+                            </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 padding">
+                    <div class="card">
+                        <div class="img-product">
+                    <img class="card-img-top img-fluid" src="img/iqra%204.jpg">
+                        </div>
+                        <div class="content-barkot">
+                        <h5 class="color-font-black m-0">T-shirt</h5>
+                            <p class="price m-0">Rp. 300.000</p>
+                        <ul class="nav barkot-produk">
+                            <li class="like">
+                                <i class="fa fa-heart-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li class="rate-satu">
+                                 
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-6 padding">
+                    <div class="card bg-faded">
+                    <div class="img-product">
+                    <img class="card-img-top img-fluid" src="img/iqra%202.jpg">
+                        </div>
+                        <div class="content-barkot">
+                        <h5 class="color-font-black m-0">T-shirt</h5>
+                            <p class="price m-0">Rp. 300.000</p>
+                            <ul class="nav barkot-produk">
+                            <li class="like">
+                                 <i class="fa fa-heart-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li class="rate-satu">
+                                
+                            </li>
+                        </ul>
+                            </div>
+                    </div>
+                    </div>
+               
+                   <div class="col-12 text-center py-3">
+                        <i class="fa fa-spinner fa-spin"></i> Loading...
+                   </div>
+                   
+               </div>
+                 </div>
+            </div>
+            
+             <div class="row">
+               <div class="col-12 text-center py-3 bg-putih shadow-bottom">
+                    <h6>Follow Us :</h6>
+                    <img class="img-follow" src="img/Facebook.png" alt="facebook">
+                    <img class="img-follow" src="img/Twitter.png" alt="facebook">
+                    <img class="img-follow" src="img/Pinterest.png" alt="facebook">
+                    <img class="img-follow" src="img/Instgram.png" alt="facebook">
+                    <img class="img-follow" src="img/Google+.png" alt="facebook">
+                </div>
+                <div class="col-12 bg-green">
+                <div class="row">
+                 <div class="col-12 pt-3">
+                    <label class="text-signup">
+                     <h6>Sign up for Tokoku.com's Email</h6>
+                     </label>
+                     </div>
+                  <div class="col-12 input-group input-signup pb-3"> 
+                      <input type="email" class="" placeholder="Email Address" aria-describedby="email-signup">
+                      <span class="input-group-btn" id="email-signup">
+                      <button class="btn btn-signup" type="button">SIGN UP</button>
+                      </span>
+                  </div>
+                   <div class="col-12 footer-link text-center">
+                       <a href="#">Go to Desktop</a>
+                   </div>
+                    <div class="col-12 footer-link px-0 py-3">
+                        <ul class="nav">
+                        <li class="border-right">
+                        <a href="#">
+                        Terms of use
+                        </a>  
+                        </li>
+                        <li class="border-right">
+                        <a href="#">
+                        Privacy 
+                        </a>  
+                        </li>
+                        <li>
+                        <a href="#">
+                        Help
+                        </a>  
+                        </li> 
+                        </ul> 
+                  
+                    </div>
+                    <div class="col-12 px-0 bg-white text-center">
+                        <p class="m-0 py-3 footer-company">&copy; PT. Ayo Techno Idea</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+        
+        
+           
+        
+        <script src="Js/jquery-3.1.1.min.js"></script>
+        <script src="Js/bootstrap.min.js"></script>
+        <script src="Js/swiper.min.js"></script>
+        <script src="Js/jquery.rateyo.min.js"></script>
+        <script src="Js/owl.carousel.min.js"></script>
+        
+        <script>
+            function openNav(){
+                document.getElementById("side-nav").style.width = "100%";
+            }
+            function closeNav(){
+                document.getElementById("side-nav").style.width = "0";
+            }
+
+            function openSearch(){
+                document.getElementById("search").style.width = "100%";
+                
+            };
+            function searchHide(){
+                document.getElementById("search").style.width = "0";
+            }
+
+            function filterNav(){
+                document.getElementById("filter").style.width = "100%";
+                
+            };
+            function filterHide(){
+                document.getElementById("filter").style.width = "0";
+            }
+            
+            function sortNav(){
+                document.getElementById("sort").style.width = "100%";
+                
+            };
+            function sortHide(){
+                document.getElementById("sort").style.width = "0";
+            }
+        </script>
+        
+        <script>
+        $(function(){
+           $("#rating-filter").rateYo({
+              fullStar: true,
+               starWidth: "35px"
+           });
+        });
+        </script>
+        <script>
+        $(function(){
+           $("#rating").rateYo({
+               rating: 4,
+              fullStar: true,
+               starWidth: "25px"
+           });
+            
+        });
+        </script>
+    
+    </body>
+</html>

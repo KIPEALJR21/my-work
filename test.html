@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        
+        <title>Test</title>
+        
+        <link rel="stylesheet" href="Css_Ext/bootstrap.min.css">
+        
+        <style>
+        section {
+    padding: 1em 1em 1em 2.7em;
+}
+.section input[type="radio"],
+.section input[type="checkbox"]{
+  display: none;
+}
+.container {
+  margin-bottom: 10px;
+}
+.container label {
+  position: relative;
+}
+
+/* Base styles for spans */
+.container span::before,
+.container span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* Radio buttons */
+.container span.radio:hover {
+  cursor: pointer;
+}
+.container span.radio::before {
+  left: -52px;
+  width: 45px;
+  height: 25px;
+  background-color: $color-font-black;
+  border-radius: 50px;
+}
+.container span.radio::after {
+  left: -49px;
+  width: 17px;
+  height: 17px;
+  border-radius: 10px;
+  background-color: $color-grayold;
+  transition: left .25s, background-color .25s;
+}
+input[type="radio"]:checked + label span.radio::after {
+  left: -27px;
+  background-color: $color-putih;
+}
+
+        </style>
+     </head>
+     <body>
+                        <section id="first" class="section">
+    <div class="container">
+      <input type="radio" name="group1" id="populer">
+      <label for="populer"><span class="radio">Terpopuler</span></label>
+    </div>
+    <div class="container">
+      <input type="radio" name="group1" id="laris">
+      <label for="laris"><span class="radio">Terlaris</span></label>
+    </div>
+    <div class="container">
+      <input type="radio" name="group1" id="baru">
+      <label for="baru"><span class="radio">Terbaru</span></label>
+    </div>
+    <div class="container">
+      <input type="radio" name="group1" id="diskon">
+      <label for="diskon"><span class="radio">Diskon</span></label>
+    </div>
+</section>
+     </body>
+</html>
