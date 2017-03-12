@@ -1,7 +1,10 @@
 .my-header {
-  background-color: #025195;
-  color: #fdfdfd;
-  padding: 1em 1em 1em 1em;
+  -webkit-box-shadow: 0 0px 10px 3px gray;
+  -moz-box-shadow: 0 0px 10px 3px gray;
+  box-shadow: 0 0px 10px 3px gray;
+  background-color: #1d2939;
+  color: #d9d9d9;
+  padding: 1em 1em 1em 2em;
   font-family: sans-serif; }
   .my-header h4 {
     margin-bottom: 0; }
@@ -9,23 +12,21 @@
     font-size: 13px; }
 
 .content-left {
-  position: static;
+  text-align: center;
+  top: 50px;
   padding: 0em 1em 1em 1em;
-  background-color: #292b2c;
-  width: 40%;
-  height: 100%; }
+  margin: 0 auto; }
   .content-left ul {
     list-style: none;
     padding: 0;
     margin: 0; }
   .content-left li {
-    padding: 1em 0 0 1.5em;
-    border-bottom: 1px solid #9f9f9f; }
+    padding: 1em 0 0 1.5em; }
   .content-left a {
     color: #9f9f9f; }
     .content-left a:hover {
       text-decoration: none;
-      color: #ECECEC; }
+      color: #292b2c; }
 
 .content-right {
   background-color: #fdfdfd;
