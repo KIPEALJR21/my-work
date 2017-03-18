@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Dashboard</title>
+        
+        <link rel="stylesheet" href="Css-S/dashboard.css">
+        <link rel="stylesheet" href="Css_Ext/bootstrap.min.css">
+        <link rel="stylesheet" href="Css_Ext/">
+        <link rel="stylesheet" href="Css_Ext/font-awesome.min.css">
+        
+    </head>
+    <body>
+       <div class="side-left" id="sidebar">
+              <div class="col-12 b-bottom-side bg-green p-2">
+                   <h4 class="text-center">TOKOKU.COM</h4>
+              </div>
+              <div class="col-12 b-bottom-side py-3 center">
+                 <input id="side-search" class="search-side" type="search" placeholder="Search Here...">
+                  <img class="img-user-left" src="img/user.png" width="60px" height="60px">
+                  <h5 class="pt-2 m-0">Mukhammad Supriadi</h5>
+                  <p class="m-0 font-size-14">Admin Manager</p>
+              </div>
+              <div class="col-12 navigasi b-bottom-side px-0" id="user-set">
+                 <ul>
+                      <li>
+                          <a>
+                              <i class="fa fa-user pr-2"></i>
+                          <span class="m-0">My Profil</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a>
+                              <i class="fa fa-gear pr-2"></i>
+                          <span class="m-0">Acount Setting</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a>
+                              <i class="fa fa-sign-out pr-2"></i>
+                          <span class="m-0">Logout</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-12 px-0 b-bottom-side navigasi">
+                  <ul id="dropdown-side" role="tablist">
+                      <li>
+                          <a>
+                             <i class="fa fa-home pr-2"></i>
+                              <span class="m-0">Dashboard</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a>
+                            <i class="fa fa-user-o pr-2"></i>
+                          <span class="m-0">Customer</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a>
+                              <i class="fa fa-shopping-cart pr-2"></i>
+                          <span class="m-0">Order</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a>
+                              <i class="fa fa-truck pr-2"></i>
+                          <span class="m-0">Pengiriman</span>
+                          </a>
+                      </li>
+                      <li role="tab" id="drop-produk" data-toggle="collapse" data-parent="#dropdown-side" href="#produk-side" aria-expanded="true">
+                          <a>
+                              <i class="fa fa-cubes pr-2"></i>
+                                  <span class="m-0">Produk</span>
+                              <i class="fa fa-caret-down"></i>
+                          </a>
+                      </li>
+                      <div id="produk-side" class="collapse" role="tabpanel" aria-labelledby="#drop-produk">  
+                          <ul class="p-0">
+                              <li>
+                                 <i class="fa fa-cube pr-2"></i>
+                                  <span>Fashion Pria</span>
+                              </li>
+                              <li>
+                                 <i class="fa fa-cube pr-2"></i>
+                                  <span>Fashion Wanita</span>
+                              </li>
+                              <li>
+                                 <i class="fa fa-cube pr-2"></i>
+                                  <span>Komputer</span>
+                              </li>
+                          </ul>
+                        </div>
+                      <li role="tab" id="drop-transaksi" data-toggle="collapse" data-parent="#dropdown-side" href="#transaksi-side" aria-expanded="true">
+                          <a>
+                              <i class="fa fa-money pr-2"></i>
+                                  <span class="m-0">Transaksi</span>
+                              <i class="fa fa-caret-down"></i>
+                          </a>
+                      </li>
+                      <div id="transaksi-side" class="collapse" role="tabpanel" aria-labelledby="#drop-transaksi">  
+                          <ul class="p-0">
+                              <li>
+                                 <i class="fa fa-credit-card pr-2"></i>
+                                  <span>BCA</span>
+                              </li>
+                              <li>
+                                 <i class="fa fa-credit-card pr-2"></i>
+                                  <span>BRI</span>
+                              </li>
+                              <li>
+                                 <i class="fa fa-credit-card pr-2"></i>
+                                  <span>BNI</span>
+                              </li>
+                          </ul>
+                        </div>
+                      <li>
+                          <a>
+                              <i class="fa fa-shopping-basket pr-2"></i>
+                          <span class="m-0">Keranjang</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-12 navigasi px-0">
+                 <ul>
+                      <li>
+                          <a>
+                              <i class="fa fa-gears pr-2"></i>
+                          <span class="m-0">Setting</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              
+          </div>
+          
+          <div class="content-main">
+            <div class="container">
+                <div class="row">
+                   <div class="col-lg-12 header">
+                   <div class="row shadow-bottom">
+                    <div class="col-6 col-sm-3 col-lg-6 px-0">
+                        <a class="menu-toggle" id="menu-side">
+                            <i class="fa fa-navicon"></i>
+                        </a>
+                        <form class="search-head" id="search-top">
+                            <input type="search" class="input-search" placeholder="Search here...">
+                        </form>
+                    </div>
+                        
+                        <div class="col-6 col-sm-9 col-lg-6">
+                            <ul class="nav header-right">
+                                <li class="right-nav">
+                                    <div class="btn-group">
+                                        <a class="btn btn-head" role="button" id="note-head" data-toggle="dropdown">
+                                        <i class="fa fa-paper-plane"></i><span class="notif-baru">16</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right notifikasi shadow-bottom" aria-labelledby="note-head">
+                                           <div class="bg-biru p-3">
+                                               <h6 class="font-putih m-0">Notification</h6>
+                                           </div>
+                                           <div class="bg-putih content-notifi">
+                                               <ul>
+                                                   <li>
+                                                       <a>
+                                                           <span class="img-notifi">
+                                                               <img src="img/user.png" width="30px;">
+                                                           </span>
+                                                           <span class="name-notifi">Mukhammad Supriadi
+                                                           <span class="new-notifi">New</span>
+                                                           </span>
+                                                           <span class="msg-notifi">message from him...</span>
+                                                       </a>
+                                                   </li>
+                                                   <li>
+                                                       <a>
+                                                           <span class="img-notifi">
+                                                               <img src="img/user.png" width="30px;">
+                                                           </span>
+                                                           <span class="name-notifi">Mukhammad Leonardi</span>
+                                                           <span class="msg-notifi">message from him...</span>
+                                                       </a>
+                                                   </li>
+                                                   <li>
+                                                       <a>
+                                                           <span class="img-notifi">
+                                                               <img src="img/user.png" width="30px;">
+                                                           </span>
+                                                           <span class="name-notifi">Denis Supriadi</span>
+                                                           <span class="msg-notifi">message from him...</span>
+                                                       </a>
+                                                   </li>
+                                                   <li>
+                                                       <a>
+                                                           <span class="img-notifi">
+                                                               <img src="img/user.png" width="30px;">
+                                                           </span>
+                                                           <span class="name-notifi">Mukhammad Junior</span>
+                                                           <span class="msg-notifi">message from him...</span>
+                                                       </a>
+                                                   </li>
+                                                   <li>
+                                                       <a>
+                                                           <span class="img-notifi">
+                                                               <img src="img/user.png" width="30px;">
+                                                           </span>
+                                                           <span class="name-notifi">Leonal Supriadi</span>
+                                                           <span class="msg-notifi">message from him...</span>
+                                                       </a>
+                                                   </li>
+                                               </ul>
+                                           </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                  <li class="right-nav" id="user-top">
+                                    <div class="dropdown">
+                                        <a class="btn btn-head dropdown-toggle" role="button" id="user-head" data-toggle="dropdown">
+                                            <img src="img/user.png" alt="user">
+                                             Mukhammad Supriadi
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right profil-user shadow-bottom" aria-labelledby="user-head">
+                                            <div class="head-profil bg-biru p-3">
+                                                <h6 class="m-0 font-putih">Profile</h6>
+                                            </div>
+                                            <div>
+                                            <a class="content-profil"><i class="fa fa-user pr-3"></i>My Profile</a>
+                                            <a class="content-profil"><i class="fa fa-gear pr-3"></i>Acount Setting</a>
+                                            <a class="content-profil"><i class="fa fa-sign-out pr-3"></i>Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-2 bg-putih py-3 shadow-bottom">
+                    <div class="col-lg-8">
+                        <h3 style="display: block; margin: 0;">Dasboard</h3>
+                        <p style="font-size: 14px; font-weight: 600;">Welcome in TOKOKU.COM</p>
+                    </div>
+                        <div class="col-lg-4">
+                           <div class="row px-3">
+                            <div class="date">
+                                <p>Wednesday</p>
+                                <h3>15<span class="bulan">March</span></h3>
+                            </div>
+                            <div class="times">
+                                <h4 class="m-0">12 : 12 <span>P.M</span></h4>
+                            </div>
+                           </div>
+                        </div>
+                    
+                    
+                </div>
+                    
+                    <div class="container">
+                                
+                                <div class="row" style="margin-bottom: 0.3em;">
+                                    <div class="col-12 p-0">
+                                        <div class="row margin">
+                                            <div class="col-lg-4 padding ">
+                                                <div class="panel" style="height: 300px;">
+                                                   <div class="panel-top p-3 bg-primary">
+                                                    <div class="row">
+                                                        <div class="col-8 font-putih">
+                                                            <h3>2.451</h3>
+                                                            <h6>Visitor</h6>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <h4 class="font-putih text-right">
+                                                                <i class="fa fa-opencart fa-2x"></i>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="panel-top p-3 bg-danger">
+                                                    <div class="row">
+                                                        <div class="col-8 font-putih">
+                                                            <h3>2.451</h3>
+                                                            <h6>Visitor</h6>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <h4 class="font-putih text-right">
+                                                                <i class="fa fa-user-o fa-2x"></i>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="panel-top p-3 bg-warning">
+                                                    <div class="row">
+                                                        <div class="col-8 font-putih">
+                                                            <h3>2.451</h3>
+                                                            <h6>Visitor</h6>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <h4 class="font-putih text-right">
+                                                                <i class="fa fa-podcast fa-2x"></i>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 padding">
+                                                <div class="statistik-top p-3">
+                                                    <canvas id="statis-big" width="100%" height="40px"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row" style="margin-bottom: 0.5em">
+                                    <div class="col-12 p-0">
+                                        <div class="row margin">
+                                            <div class="col-lg-6 padding">
+                                                <div class="grafik-produk">
+                                                    <canvas id="grafik-produk" width="100%" height="72px"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 padding pt-2">
+                                                <div class="bg-putih p-3">
+                                                    <canvas id="grafik-donut" width="100%" height="70px"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="row bg-putih">
+                                    <div class="col-lg-12 text-center py-1 bg-biru">
+                                        <h5 class="font-putih">Statistik Tokoku.com</h5>
+                                    </div>
+                                    <div class="col-lg-12 px-0" style="overflow: auto;">
+                                        <table class="table">
+                                          <thead class="bg-biru font-putih">
+                                            <tr>
+                                              <th>Statistik</th>
+                                              <th>Jan</th>
+                                              <th>Febr</th>
+                                              <th>Marc</th>
+                                              <th>April</th>
+                                              <th>May</th>
+                                              <th>June</th>
+                                              <th>July</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <th scope="row">Produk</th>
+                                              <td>2.451</td>
+                                              <td>2.324</td>
+                                              <td>2.555</td>
+                                              <td>2.132</td>
+                                              <td>2.456</td>
+                                              <td>1.997</td>
+                                              <td>2.671</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">Transaksi</th>
+                                              <td>234</td>
+                                              <td>124</td>
+                                              <td>194</td>
+                                              <td>123</td>
+                                              <td>635</td>
+                                              <td>236</td>
+                                              <td>648</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">New Customer</th>
+                                              <td>125</td>
+                                              <td>56</td>
+                                              <td>85</td>
+                                              <td>34</td>
+                                              <td>97</td>
+                                              <td>34</td>
+                                              <td>55</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">Order</th>
+                                              <td>235</td>
+                                              <td>58</td>
+                                              <td>89</td>
+                                              <td>52</td>
+                                              <td>81</td>
+                                              <td>56</td>
+                                              <td>68</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                    </div>
+                    
+                    <div class="row footer shadow-bottom">
+                        <div class="col-lg-12 py-3">
+                            <p class="m-0"> &copy; 2017 PT. Ayo Techno Idea</p>
+                        </div>    
+                    </div>
+                    
+                    <div class="chat">
+                        <h6 class="m-0">MESSAGE
+                        <i class="fa fa-comments-o pl-2"></i>
+                        </h6>
+                    </div>
+            </div>
+        </div>
+        
+        <script src="Js/jquery-3.1.1.min.js"></script>
+        <script src="Js/Chart.min.js"></script>
+        <script src="Js/Chart.js"></script>
+        <script src="Js/bootstrap.min.js"></script>       
+        
+        <script>
+var ctx = document.getElementById("statis-big");
+var myChart = new Chart(ctx, {
+    type: 'line',
+     data: {
+       labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [
+        {
+            label: "Statistik",
+            fill: "rgba(29, 41, 57,0.4)",
+            lineTension: 0.1,
+            backgroundColor: "rgba(29, 41, 57,0.6)",
+            borderColor: "rgba(29, 41, 57,0.9)",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: "rgba(123, 175, 164,1)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(123, 175, 164,1)",
+            pointHoverBorderColor: "rgba(240,240,240,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data: [65, 59, 80, 81, 56, 55, 40],
+            spanGaps: false,
+        }
+    ]
+         
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                stacked: true
+            }]
+        }
+    }
+
+});
+</script>
+        
+        <script>
+var ctx = document.getElementById("grafik-produk");
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["F. Wanita", "F. Pria", "Komputer", "Handphone", "Laptop", "Olahraga", "Kamera", "Babi & mon", "Elektronik"],
+        datasets: [{
+            label: 'Produk',
+            data: [1342, 1954, 845, 1289, 742, 567, 1174, 672, 974],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(255, 206, 86, 0.8)',
+                'rgba(75, 192, 192, 0.8)',
+                'rgba(153, 102, 255, 0.8)',
+                'rgba(233, 112, 155, 0.8)',
+                'rgba(53, 132, 225, 0.8)',
+                'rgba(51, 175, 245, 0.8)',
+                'rgba(255, 159, 64, 0.8)'
+            ],
+           
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+        
+        <script>
+            var ctx = document.getElementById("grafik-donut");
+        var myDoughnutChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+    labels: [
+        "JNE",
+        "TIKI",
+        "POS"
+    ],
+    datasets: [
+        {
+            data: [2134, 1345, 879],
+            backgroundColor: [
+                "#7bafa4",
+                "#2c3848",
+                "#5bc0de"
+            ],
+            hoverBackgroundColor: [
+                "#5c9186",
+                "#161f2a",
+                "#4babc7"
+            ]
+        }]
+},
+            options: {
+        animation:{
+            animateScale:true
+        }
+    }
+});
+        </script>
+     
+        
+        
+                 
+    </body>
+</html>

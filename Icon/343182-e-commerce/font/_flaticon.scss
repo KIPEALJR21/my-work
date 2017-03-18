@@ -1,0 +1,99 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 07/03/2017 09:54
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-031-24-hours:before { content: "\f100"; }
+.flaticon-031-abacus:before { content: "\f101"; }
+.flaticon-031-buy:before { content: "\f102"; }
+.flaticon-031-chat:before { content: "\f103"; }
+.flaticon-031-coin:before { content: "\f104"; }
+.flaticon-031-coupon:before { content: "\f105"; }
+.flaticon-031-credit-card:before { content: "\f106"; }
+.flaticon-031-credit-card-1:before { content: "\f107"; }
+.flaticon-031-delivery-truck:before { content: "\f108"; }
+.flaticon-031-gift:before { content: "\f109"; }
+.flaticon-031-laptop:before { content: "\f10a"; }
+.flaticon-031-medal:before { content: "\f10b"; }
+.flaticon-031-mouse:before { content: "\f10c"; }
+.flaticon-031-online-shop:before { content: "\f10d"; }
+.flaticon-031-package:before { content: "\f10e"; }
+.flaticon-031-piggy-bank:before { content: "\f10f"; }
+.flaticon-031-placeholder:before { content: "\f110"; }
+.flaticon-031-purse:before { content: "\f111"; }
+.flaticon-031-search:before { content: "\f112"; }
+.flaticon-031-shirt:before { content: "\f113"; }
+.flaticon-031-shopping-bag:before { content: "\f114"; }
+.flaticon-031-shopping-basket:before { content: "\f115"; }
+.flaticon-031-shopping-cart:before { content: "\f116"; }
+.flaticon-031-smartphone:before { content: "\f117"; }
+.flaticon-031-store:before { content: "\f118"; }
+.flaticon-031-tag:before { content: "\f119"; }
+.flaticon-031-tap:before { content: "\f11a"; }
+.flaticon-031-transfer:before { content: "\f11b"; }
+.flaticon-031-wallet:before { content: "\f11c"; }
+.flaticon-031-woman:before { content: "\f11d"; }
+    
+    $font-Flaticon-031-24-hours: "\f100";
+    $font-Flaticon-031-abacus: "\f101";
+    $font-Flaticon-031-buy: "\f102";
+    $font-Flaticon-031-chat: "\f103";
+    $font-Flaticon-031-coin: "\f104";
+    $font-Flaticon-031-coupon: "\f105";
+    $font-Flaticon-031-credit-card: "\f106";
+    $font-Flaticon-031-credit-card-1: "\f107";
+    $font-Flaticon-031-delivery-truck: "\f108";
+    $font-Flaticon-031-gift: "\f109";
+    $font-Flaticon-031-laptop: "\f10a";
+    $font-Flaticon-031-medal: "\f10b";
+    $font-Flaticon-031-mouse: "\f10c";
+    $font-Flaticon-031-online-shop: "\f10d";
+    $font-Flaticon-031-package: "\f10e";
+    $font-Flaticon-031-piggy-bank: "\f10f";
+    $font-Flaticon-031-placeholder: "\f110";
+    $font-Flaticon-031-purse: "\f111";
+    $font-Flaticon-031-search: "\f112";
+    $font-Flaticon-031-shirt: "\f113";
+    $font-Flaticon-031-shopping-bag: "\f114";
+    $font-Flaticon-031-shopping-basket: "\f115";
+    $font-Flaticon-031-shopping-cart: "\f116";
+    $font-Flaticon-031-smartphone: "\f117";
+    $font-Flaticon-031-store: "\f118";
+    $font-Flaticon-031-tag: "\f119";
+    $font-Flaticon-031-tap: "\f11a";
+    $font-Flaticon-031-transfer: "\f11b";
+    $font-Flaticon-031-wallet: "\f11c";
+    $font-Flaticon-031-woman: "\f11d";
