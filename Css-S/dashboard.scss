@@ -14,36 +14,35 @@ $color-cyan: #49a8c4;
 $color-birumuda: #71767c;
 $color-birumid: #2c3848;
 $color-birutua:#1d2939;
+$color-biru:#080c10;
 $color-biruold:#161f2a;
+$color-hijau:#56c44d;
 
-
-.padding{
-padding-left: 0.3em;
-    padding-right: 0.3em;
-    padding-top: 0.5em;
+.mypadding{
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+    padding-top: 0.5em !important;
 }
 
 .margin{
-margin: 0 -25px;
+    margin: 0 -1.4em !important;
 }
 
-@mixin shadow-bottom($bottom){
+@mixin shadow-bottom($bottom) {
     -webkit-box-shadow: $bottom;
-	   -moz-box-shadow: $bottom;
-	        box-shadow: $bottom;
+    -moz-box-shadow: $bottom;
+    box-shadow: $bottom;
 }
 
-@mixin transide($ease){
- -webkit-transition: $ease;
+@mixin transide($ease) {
+    -webkit-transition: $ease;
     -moz-transition: $ease;
     -o-transition: $ease;
     transition: $ease;
 }
 
-
-.side-left{
+.side-left {
     @include transide(all 0.5s ease);
-        
     z-index: 1000;
     position: fixed;
     width: 250px;
@@ -52,158 +51,141 @@ margin: 0 -25px;
     bottom: 0;
     color: $color-putih;
     background-color: $color-birutua;
+    transition: 0.5s;
 }
 
-.img-user-left{
+.img-user-left {
     border-radius: 50%;
     border: 2px solid $color-gray;
     margin: 0 auto;
 }
 
-.navigasi{
+.navigasi {
     color: $color-birumuda;
-    
-    ul{
+    ul {
         list-style: none;
         margin: 0;
         padding: 0.5em 0em 0.5em 0em;
-    
-    li{
-        padding:0.5em 0 0.5em 2em;
-        
-        &:hover{
-            background-color: $color-birumid;
-            color: $color-graymid;
-            border-left: 5px solid $color-greenday;
+        li {
+            padding: 0.5em 0 0.5em 2em;
+            &:hover {
+                background-color: $color-birumid;
+                color: $color-graymid;
+                border-left: 5px solid $color-greenday;
+            }
         }
-    }
-        a{     
+        a {
             font-size: 18;
             font-weight: 400;
             font-family: arial;
-        } 
+        }
     }
-    
-   
 }
 
-.notif-baru{
+.notif-baru {
     position: absolute;
     left: 7px;
-    top: 3px;
+    top: 5px;
     background-color: $color-red;
-    border-radius: 6px;
+    border-radius: 20px;
     color: $color-putih;
     font-size: 10px;
     text-align: center;
-    padding: 0.1em 0.4em;
-    
+    padding: 0.3em 0.4em 0.3em 0.4em;
 }
 
-.notifikasi{
+.notifikasi {
     padding: 0 !important;
     margin: 0 !important;
     border-radius: 0px !important;
     min-width: 300px !important;
 }
 
-.content-notifi{
+.content-notifi {
     padding: 0.5em 0.5em;
-    
-    ul{
+    ul {
         list-style: none;
         padding: 0;
     }
-    
-    li{
+    li {
         margin: 0;
         padding: 0.5em;
         border-bottom: 1px solid $color-gray;
         border-left: 0px !important;
-        
-        &:hover{
+        &:hover {
             background-color: $color-gray;
         }
     }
-    
-    .img-notifi{
+    .img-notifi {
         float: left;
         width: 50px;
         display: block;
         padding: 0.5em 0.5em;
     }
-    
-    .new-notifi{
-        background-color: $color-greenday;
+    .new-notifi {
+        background-color: $color-hijau;
         color: $color-putih;
         border-radius: 5px;
-        font-size: 14px;
-        padding: 0.1em 0.2em;
+        font-size: 12px;
+        padding: 0.2em 0.4em;
         position: absolute;
-        right: 1em;;
+        right: 1em;
+        ;
     }
-    
-    .name-notifi{
+    .name-notifi {
         display: block;
         font-weight: 500;
         margin: 0;
         padding: 0;
-        
     }
-    
-    .msg-notifi{
+    .msg-notifi {
         font-size: 14px;
     }
 }
 
-
-.fa-caret-down{
+.fa-caret-down {
     position: absolute !important;
     right: 1.5em !important;
     padding-top: 0.3em !important;
 }
 
-#produk-side{
-    
-    li{
-        padding-left: 3em !important;
-        background-color: $color-biruold;
-        
-        &:hover{
-            background-color: $color-birutua;
-        }
-    }
-}
 
-#transaksi-side{
-    
-    li{
+#produk-side {
+    li {
         padding-left: 3em !important;
-        background-color: $color-biruold !important;
-        
-        &:hover{
+        background-color: $color-biruold !important;;
+        &:hover {
             background-color: $color-birutua !important;
         }
     }
 }
 
-.profil-user{
+#transaksi-side {
+    li {
+        padding-left: 3em !important;
+        background-color: $color-biruold !important;
+        &:hover {
+            background-color: $color-birutua !important;
+        }
+    }
+}
+
+.profil-user {
     padding: 0 !important;
     margin: 0 !important;
     border-radius: 0px !important;
     min-width: 250px !important;
 }
 
-.content-profil{
+.content-profil {
     display: block;
     padding: 0.3em 1.5em 0.3em 1em;
-    
-    &:hover{
+    &:hover {
         background-color: $color-gray;
     }
 }
 
-.search-side{
+.search-side {
     background-color: $color-birumid;
     border: none;
     color: $color-gray;
@@ -212,47 +194,78 @@ margin: 0 -25px;
     margin-bottom: 1.3em;
 }
 
-.icon-side{
+.icon-side {
     margin-right: 0.5em;
     width: 25px;
     height: 25px;
     color: $color-red;
 }
 
-.produk-item{
+.produk-item {
     display: none;
 }
 
-.content-main{
+.header-fixed {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.content-main {
     width: calc(100% - 250px);
     margin-left: 250px;
     height: 100%;
+    padding-top: 50px;
     background-color: $color-graymid;
+    transition: margin-left 0.2s;
 }
 
-.header{
+.header {
     background-color: $color-putih;
     height: 50px;
     border-bottom: 1px solid $color-gray;
+    transition: 0.2s;
 }
 
-.menu-toggle{
+.menu-toggle {
     float: left;
     text-align: center;
     padding: 0.7em 0.5em;
     width: 50px;
     height: 50px;
     border-right: 1px solid $color-gray;
-    color: $color-font-black;
+    color: $color-grayold;
+    
+    &:hover{
+        color: $color-font-black !important;
+    }
 }
 
-.search-head{
+.added-item {
+    float: left;
+    text-align: center;
+    padding: 0.5em 0.5em !important;
+    width: 50px;
+    height: 50px;
+    border-right: 1px solid $color-gray;
+    
+    h5{
+        color: $color-graymid;
+    
+     &:hover{
+        color: $color-font-black !important;
+    }
+    } 
+   
+}
+
+.search-head {
     float: left;
     width: 200px;
     padding: 0;
     margin: 0;
-    
-    .input-search{
+    .input-search {
         display: block;
         width: 100%;
         height: 50px;
@@ -267,190 +280,332 @@ margin: 0 -25px;
         background-position-y: 50%;
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
-        
-        &:focus{
+        &:focus {
             outline: none;
             width: 400px;
         }
     }
 }
 
-.header-right{
+.header-right {
     right: 0;
     float: right;
     
-    .right-nav{
+    .right-nav {
         border-left: 1px solid $color-gray;
         height: 50px;
-        padding-top: 0.5em;
     }
 }
 
-.btn-head{
+.btn-head {
     background-color: transparent;
     border-radius: 0;
+    color: $color-grayold !important;
+    height: 50px;
+    margin: 0 auto !important;
+    padding-top: 0.8em !important;
     
-    &:focus{
-        outline: none;
+    &:hover{
+        color: $color-font-black !important;
     }
     
-    img{
+    &:focus {
+        outline: none;
+        color: $color-font-black !important;
+    }
+    img {
         border-radius: 50%;
-        border: 1px solid $color-gray;
+        border: 1px solid $color-graymid;
         width: 20px;
         margin-right: 0.3em;
     }
 }
 
-.b-bottom-side{
+.b-bottom-side {
     border-bottom: 1px solid $color-birumid;
 }
 
-.top-event{
+.top-event {
     margin-top: 50px;
 }
 
-.date{
+.date {
     background-color: $color-birutua;
     color: $color-putih;
     text-align: center;
     width: 110px;
     padding: 0.1em 0em;
-    
-    p{
+    p {
         font-weight: 400;
         margin: 0;
     }
-    
-    .bulan{
+    .bulan {
         font-size: 14px;
         margin-left: 0.5em;
         font-weight: 500;
     }
 }
 
-.times{
-    background-color: $color-gray;
+.times {
+    background-color: $color-hijau;
     text-align: center;
+    color: $color-putih;
     padding-top: 1em;
     width: 110px;
     padding: 0.3em 0.5em 0 0.5em;
-    
-    span{
+    span {
         font-size: 16px;
         padding-bottom: 0.5em;
     }
 }
 
-.statistik-top{
-        border-radius: 5px;
-        height: auto;
-        margin: 0 !important;
-        padding: 1em 1em !important;
-        background-color: $color-putih;
+.header-s {
+    background-color: $color-putih;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid $color-gray;
+    color: $color-font-black;
+    padding: 0.3em 1em;
+    font-weight: 500;
+    text-align: center;
 }
 
-.panel-top{
+.statistik-content {
+    height: auto !important;
+    margin: 0 !important;
     border-radius: 5px;
-    margin-bottom: 0.5em;
+    background-color: $color-putih;
     
-    i{
+    .statistik-header {
+        @extend .header-s;
+    }
+    
+    .statis-isi{
+        padding: 0.1em 0.5em;
+    }
+    
+    .details-statik {
+        padding: 0.35em 1em;
+        border-top: 1px solid $color-graymid;
+    }
+}
+
+.panel {
+    height: auto;
+    margin-bottom: 0.7em;
+    border-radius: 5px;
+}
+
+.panel-1 {
+    @extend .panel;
+    background-color: $color-hijau;
+}
+
+.panel-2 {
+    @extend .panel;
+    background-color: $color-hijau;
+}
+
+.panel-3 {
+    @extend .panel;
+    background-color: $color-hijau;
+    margin-bottom: 0 !important;
+}
+
+.panel-top {
+    padding: 1em 1em 1em 1em;
+    i {
         right: 0;
+        padding-top: 0.2em;
+        padding-right: 0.3em;
         text-align: right;
     }
 }
 
-.grafik-produk{
-    border-radius: 5px;
-    background-color: $color-putih;
-    padding: 0.7em 1em;
+.link-panel {
+    color: $color-grayold;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover {
+        color: $color-birutua;
+        text-decoration: none;
+    }
 }
 
-.footer{
+.panel-footer {
+    padding: 0.5em 1em !important;
+    border-radius: 0 0 5px 5px;
+    background-color: $color-putih;
+    i {
+        position: absolute;
+        right: 1.3em;
+        padding-top: 0.2em;
+    }
+}
+
+.grafik-produk {
+    background-color: $color-putih;
+    border-radius: 5px;
+    height: auto;
+    .grap-header {
+        @extend .header-s;
+    }
+    .grap-content {
+        padding: 0.5em 1em 0.5em 1em;
+        .btn-grap {
+            background-color: $color-birutua !important;
+            color: $color-gray;
+            border-radius: 5px;
+            padding: 0.3em 0.8em;
+            font-weight: 600;
+            margin-top: 0.7em;
+        }
+    }
+}
+
+.grafik-donut {
+    border-radius: 5px;
+    background-color: $color-putih;
+    height: 400px;
+    .grad-header {
+        @extend .header-s;
+    }
+    .grad-content {
+        margin: 0 auto;
+    }
+}
+
+.persentase{
+    padding: 1em 0.5em;
+    border-radius: 5px;
+}
+
+.head-table-s {
+    @extend .header-s;
+}
+
+.table-statis {
+    border-radius: 0 0 5px 5px;
+    background-color: $color-putih;
+}
+
+.footer {
     background-color: $color-putih;
     margin-top: 1em;
 }
 
-.chat{
-    background-color: $color-birutua;
+.chat {
+    background-color: $color-hijau;
     text-align: center;
     width: 160px;
-    border: 3px solid $color-greenday;
+    border: 3px solid $color-putih;
     border-bottom: 0px;
     border-radius: 10px 10px 0 0;
     position: fixed;
+    z-index: 9999;
     color: $color-putih;
     padding: 0.5em 0.5em;
     bottom: 0;
     right: 50px;
 }
-  
-@media (min-width:576px){
-    #user-set{
+
+@media (min-width:576px) {
+    #user-set {
         display: none;
-        -webkit-transition:  0.4s ease-in-out;
+        -webkit-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
-        }
-    
-    #side-search{
+    }
+    #side-search {
         display: none;
     }
 }
 
-@media (max-width:768px){
-    #search-top{
+@media (min-width:992px) {
+    .menu-toggle{
         display: none;
     }
-    #sidebar{
+}
+
+@media (max-width: 992px) {
+    #sidebar {
         display: none;
     }
-    .content-main{
+    .header-fixed {
+        width: 100%;
+        margin-left: 0;
+    }
+    .content-main {
         width: 100%;
         margin-left: 0;
     }
 }
 
-@media (max-width:576px){
-    #user-top{
+@media (max-width:768px) {
+    #search-top {
         display: none;
     }
+    .content-main {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
-
-.shadow-bottom{
-    @include shadow-bottom(0 0 17px -4px);
+@media (max-width:576px) {
+    #user-top {
+        display: none;
+    }
+    .date {
+        width: 50%;
+    }
+    .times {
+        width: 50%;
+        padding-top: 1em;
+    }
+    .panel-footer {
+        padding: 0.5em 1em !important;
+        border-radius: 0 0 5px 5px;
+        background-color: $color-putih;
+        i {
+            position: absolute;
+            right: 2.3em;
+            padding-top: 0.2em;
+        }
+    }
 }
 
-.center{
-   text-align: center;
+.shadow-bottom {
+    @include shadow-bottom(0 5px 12px -9px);
 }
 
-.bg-{
- 
-    &putih{       
+.center {
+    text-align: center;
+}
+
+.bg- {
+    &putih {
         background-color: $color-putih;
     }
-    
-    &green{
+    &green {
         background-color: $color-greenday;
     }
-    &biru{
+    &biru {
         background-color: $color-birutua;
     }
-    &gray{
+    &gray {
         background-color: $color-gray;
+    }
+    &hijau{
+        background-color: $color-hijau;
     }
 }
 
-.font-{
-    
-    &putih{
+.font- {
+    &putih {
         color: $color-putih;
     }
-    &black{
+    &black {
         color: $color-font-black;
     }
-    &red{
+    &red {
         color: $color-red;
     }
 }
