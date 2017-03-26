@@ -13,13 +13,16 @@
 </head>
 
 <body>
-    <div class="side-left" id="sidebar">
-        <div class="col-12 b-bottom-side bg-hijau p-2">
-            <h4 class="text-center">TOKOKU.COM</h4> </div>
-        <div class="col-12 b-bottom-side py-3 center">
+    <div class="side-left">
+        <div class="col-12 bg-hijau p-2">
+            <a class="logo-top" href="">
+                <h4 class="text-center">TOKOKU.COM</h4>
+            </a>
+        </div>
+        <div class="col-12 b-bottom-side py-3 px-2 center">
             <input id="side-search" class="search-side" type="search" placeholder="Search Here..."> <img class="img-user-left" src="img/user.png" width="60px" height="60px">
-            <h5 class="pt-2 m-0">Mukhammad Supriadi</h5>
-            <p class="m-0 font-size-14">Admin Manager</p>
+            <p class="pt-1 m-0 name-user">Mukhammad Supriadi</p>
+            <p class="m-0 pk-user">Admin Manager</p>
         </div>
         <div class="col-12 navigasi b-bottom-side px-0" id="user-set">
             <ul>
@@ -36,20 +39,36 @@
         </div>
         <div class="col-12 px-0 b-bottom-side navigasi">
             <ul id="dropdown-side" role="tablist">
-                <li>
-                    <a> <i class="fa fa-home pr-2"></i> <span class="m-0">Dashboard</span> </a>
+                <li class="db-active">
+                    <a> 
+                        <i class="fa fa-home pr-2"></i>
+                        <span class="m-0">Dashboard</span> 
+                    </a>
                 </li>
                 <li>
-                    <a> <i class="fa fa-user-o pr-2"></i> <span class="m-0">Customer</span> </a>
+                    <a> 
+                        <i class="fa fa-user-o pr-2"></i> 
+                        <span class="m-0">Customer</span> 
+                    </a>
                 </li>
                 <li>
-                    <a> <i class="fa fa-shopping-cart pr-2"></i> <span class="m-0">Order</span> </a>
+                    <a> 
+                        <i class="fa fa-shopping-cart pr-2"></i> 
+                        <span class="m-0">Order</span> 
+                    </a>
                 </li>
                 <li>
-                    <a> <i class="fa fa-truck pr-2"></i> <span class="m-0">Pengiriman</span> </a>
+                    <a> 
+                        <i class="fa fa-truck pr-2"></i> 
+                        <span class="m-0">Pengiriman</span> 
+                    </a>
                 </li>
                 <li role="tab" id="drop-produk" data-toggle="collapse" data-parent="#dropdown-side" href="#produk-side" aria-expanded="true">
-                    <a> <i class="fa fa-cubes pr-2"></i> <span class="m-0">Produk</span> <i class="fa fa-caret-down"></i> </a>
+                    <a> 
+                        <i class="fa fa-cubes pr-2"></i> 
+                        <span class="m-0">Produk</span> 
+                        <i class="fa fa-caret-down"></i> 
+                    </a>
                 </li>
                 <div id="produk-side" class="collapse" role="tabpanel" aria-labelledby="#drop-produk">
                     <ul class="p-0">
@@ -81,36 +100,40 @@
             </ul>
         </div>
     </div>
-
-    <div class="chat">
-        <h6 class="m-0">MESSAGE
-            <i class="fa fa-comments-o pl-2"></i>
-        </h6> </div>
+    
+    
+ <a class="chat" href="">
+            <h6 class="float-left m-0">MESSAGE</h6>
+            <i class="float-left fa fa-comments-o pl-2"></i>
+ </a>
 
     <div class="header header-fixed">
         <div class="row shadow-bottom m-0 p-0">
             <div class="col-6 col-sm-6 col-lg-6 px-0">
                <ul class="nav">
                    <li>
-                       <a class="menu-toggle" id="menu-side"><i class="fa fa-navicon"></i> </a>
+                       <a class="menu-toggle" role="button">
+                           <i class="fa fa-navicon"></i> 
+                       </a>
                    </li>
-                   <li>
+                   <li class="tambah-nav-left">
                       <div class="btn-group">
                        <a class="btn btn-head added-item" role="button" id="added-item" data-toggle="dropdown">
-                        <h5>
                             <i class="fa fa-plus-square"></i>
-                        </h5>
                         </a>
                 
-                    <div class="dropdown-menu dropdown-menu profil-user shadow-bottom" aria-labelledby="added-item">
-                    <div class="pb-2">
-                        <a class="content-profil">
+                    <div class="dropdown-menu dropdown-menu added-drop shadow-bottom" aria-labelledby="added-item">
+                    <div class="bg-putih b-bottom-side head-drop-all">
+                         <h6 class=" m-0">TAMBAH</h6> 
+                    </div>
+                    <div class="py-2">
+                        <a class="c-added">
                             <i class="fa fa-cubes pr-3"></i>Tambah Produk
                         </a>
-                        <a class="content-profil">
+                        <a class="c-added">
                             <i class="fa fa-shopping-cart pr-3"></i>Tambah Order
                         </a>
-                        <a class="content-profil">
+                        <a class="c-added">
                             <i class="fa fa-user-o pr-3"></i>Tambar Customer
                         </a>
                     </div>
@@ -126,43 +149,112 @@
             </div>
             <div class="col-6 col-sm-6 col-lg-6 px-0">
                 <ul class="nav header-right">
+                    <li class="right-nav tambah-nav-right">
+                      <div class="btn-group">
+                       <a class="btn btn-head added-item" role="button" id="added-item" data-toggle="dropdown">
+                            <i class="fa fa-plus-square"></i>
+                        </a>
+                
+                    <div class="dropdown-menu dropdown-menu dropdown-menu-right added-drop shadow-bottom" aria-labelledby="added-item">
+                    <div class="bg-biru head-drop-all">
+                         <h6 class="font-putih m-0">TAMBAH</h6> 
+                    </div>
+                    <div class="py-2">
+                        <a class="c-added">
+                            <i class="fa fa-cubes pr-3"></i>Tambah Produk
+                        </a>
+                        <a class="c-added">
+                            <i class="fa fa-shopping-cart pr-3"></i>Tambah Order
+                        </a>
+                        <a class="c-added">
+                            <i class="fa fa-user-o pr-3"></i>Tambar Customer
+                        </a>
+                    </div>
+                    </div>
+                    </div>
+                   </li>
                     <li class="right-nav">
                         <div class="btn-group">
-                            <a class="btn btn-head" role="button" id="note-head" data-toggle="dropdown">
-                             <i class="fa fa-paper-plane"></i>
-                             <span class="notif-baru">22</span> 
+                            <a class="btn btn-head" role="button" id="" data-toggle="dropdown">
+                                <i class="fa fa-bug"></i>
+                                <span class="notifi-baru"></span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right notifikasi shadow-bottom" aria-labelledby="note-head">
-                                <div class="bg-biru p-3">
-                                    <h6 class="font-putih m-0">Notification</h6> 
+                            <div class="dropdown-menu dropdown-menu-right notifi shadow-bottom" aria-labelledby="note-head">
+                                <div class="bg-putih b-bottom-side head-drop-all">
+                                    <h6 class="m-0">PEMBERITAHUAN</h6> 
                                 </div>
                                 <div class="bg-putih content-notifi">
                                     <ul>
                                         <li>
-                                            <a> <span class="img-notifi">
-                                                               <img src="img/user.png" width="30px;">
-                                                           </span> <span class="name-notifi">Mukhammad Supriadi
-                                                           <span class="new-notifi">NEW</span> </span> <span class="msg-notifi">message from him...</span> </a>
+                                            <a><span class="name-notifi">10 Produk telah ditambahkan
+                                                </span> 
+                                                <i class="fa fa-cube"></i>
+                                                <span class="time-notifi"> 1 detik yang lalu</span> 
+                                            </a>
                                         </li>
                                         <li>
-                                            <a> <span class="img-notifi">
-                                                               <img src="img/user.png" width="30px;">
-                                                           </span> <span class="name-notifi">Mukhammad Leonardi</span> <span class="msg-notifi">message from him...</span> </a>
+                                            <a><span class="name-notifi">6 Produk telah mencapai limit stok
+                                                </span>
+                                                <i class="fa fa-cube"></i> 
+                                                <span class="time-notifi"> 12 menit yang lalu</span> 
+                                            </a>
                                         </li>
                                         <li>
-                                            <a> <span class="img-notifi">
-                                                               <img src="img/user.png" width="30px;">
-                                                           </span> <span class="name-notifi">Denis Supriadi</span> <span class="msg-notifi">message from him...</span> </a>
+                                            <a><span class="name-notifi">2 Customer baru
+                                                </span> 
+                                                <i class="fa fa-cube"></i>
+                                                <span class="time-notifi"> 30 menit yang lalu</span> 
+                                            </a>
                                         </li>
                                         <li>
-                                            <a> <span class="img-notifi">
-                                                               <img src="img/user.png" width="30px;">
-                                                           </span> <span class="name-notifi">Mukhammad Junior</span> <span class="msg-notifi">message from him...</span> </a>
+                                            <a><span class="name-notifi">4 Pesanan baru
+                                                </span> 
+                                                <i class="fa fa-cube"></i>
+                                                <span class="time-notifi"> 2 jam yang lalu</span> 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="right-nav">
+                        <div class="btn-group">
+                            <a class="btn btn-head" role="button" id="note-head" data-toggle="dropdown">
+                             <i class="fa fa-envelope"></i>
+                             <span class="pesan-baru"></span> 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right pesan shadow-bottom" aria-labelledby="note-head">
+                                <div class="bg-putih b-bottom-side head-drop-all">
+                                    <h6 class="m-0">PESAN</h6> 
+                                </div>
+                                <div class="bg-putih content-pesan">
+                                    <ul>
+                                        <li>
+                                            <a> <span class="img-pesan">
+                                                               <img src="img/msg-foto.jpg">
+                                                           </span> <span class="name-pesan">Mukhammad Supriadi
+                                                           <span class="new-pesan">NEW</span> </span> <span class="msg-pesan">message from him...</span> </a>
                                         </li>
                                         <li>
-                                            <a> <span class="img-notifi">
-                                                               <img src="img/user.png" width="30px;">
-                                                           </span> <span class="name-notifi">Leonal Supriadi</span> <span class="msg-notifi">message from him...</span> </a>
+                                            <a> <span class="img-pesan">
+                                                               <img src="img/msg-foto.jpg">
+                                                           </span> <span class="name-pesan">Mukhammad Leonardi</span> <span class="msg-pesan">message from him...</span> </a>
+                                        </li>
+                                        <li>
+                                            <a> <span class="img-pesan">
+                                                               <img src="img/msg-foto.jpg">
+                                                           </span> <span class="name-pesan">Denis Supriadi</span> <span class="msg-pesan">message from him...</span> </a>
+                                        </li>
+                                        <li>
+                                            <a> <span class="img-pesan">
+                                                               <img src="img/msg-foto.jpg">
+                                                           </span> <span class="name-pesan">Mukhammad Junior</span> <span class="msg-pesan">message from him...</span> </a>
+                                        </li>
+                                        <li>
+                                            <a> <span class="img-pesan">
+                                                               <img src="img/msg-foto.jpg">
+                                                           </span> <span class="name-pesan">Leonal Supriadi</span> <span class="msg-pesan">message from him...</span> </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -172,10 +264,10 @@
                     <li class="right-nav" id="user-top">
                        <div class="btn-group">
                         <div class="dropdown">
-                            <a class="btn btn-head dropdown-toggle" role="button" id="user-head" data-toggle="dropdown"> <img src="img/user.png" alt="user"> Mukhammad Supriadi </a>
+                            <a class="btn btn-head user-drop dropdown-toggle" role="button" id="user-head" data-toggle="dropdown"> <img src="img/user.png" alt="user"> Mukhammad Supriadi </a>
                             <div class="dropdown-menu dropdown-menu-right profil-user shadow-bottom" aria-labelledby="user-head">
-                                <div class="head-profil bg-biru p-3">
-                                    <h6 class="m-0 font-putih">Profile</h6>
+                                <div class="head-profil bg-putih b-bottom-side head-drop-all">
+                                    <h6 class="m-0">PROFILE</h6>
                                 </div>
                                 <div class="pb-2">
                                     <a class="content-profil">
@@ -201,7 +293,7 @@
         <div class="container-fluid">
             <div class="row mb-2 bg-putih py-3 shadow-bottom">
                 <div class="col-sm-7 col-lg-8">
-                    <h3 style="display: block; margin: 0;">Dasboard</h3>
+                    <h3 style="display: block; margin: 0;">Dashboard</h3>
                     <p style="font-size: 14px; font-weight: 600;">Welcome in TOKOKU.COM</p>
                 </div>
                 <div class="col-sm-5 col-lg-4">
@@ -270,7 +362,9 @@
                             </div>
                             <div class="col-sm-8 col-lg-8 mypadding">
                                 <div class="statistik-content">
-                                    <div class="statistik-header"> <span>Statistik Keuangan</span> </div>
+                                    <div class="statistik-header"> 
+                                    <span>Statistik Keuangan</span>
+                                    </div>
                                     <div class="statis-isi">
                                         <div id="chart-container">FusionCharts will render here</div>
                                     </div>
@@ -285,7 +379,7 @@
                 </div>
 
 
-                <div class="row" style="margin-bottom: 0.7em">
+                <div class="row" style="margin-bottom: 0.9em">
                     <div class="col-12">
                         <div class="row margin">
                             <div class="col-sm-6 col-lg-6 mypadding grafik">
@@ -301,7 +395,7 @@
                                 <div class="grafik-donut pl-0">
                                     <div class="grad-header"> <span>Statistik Jasa Pengiriman</span> </div>
                                     <div class="grad-conten">
-                                        <div id="mydonut-two" style="width: 300px; margin: 0 auto; padding:0;"></div>
+                                        <div id="mydonut-send" style="width: 230px; margin: 0 auto; padding:0;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -316,7 +410,7 @@
                     </div>
                     <div class="col-lg-12 px-0 table-statis" style="overflow: auto;">
                         <table class="table">
-                            <thead class="bg-hijau font-putih">
+                            <thead class="">
                                 <tr>
                                     <th>Statistik</th>
                                     <th>Jan</th>
@@ -396,337 +490,13 @@
     <script src="Js/Grafik/js/fusioncharts.charts.js"></script>
     <script src="Js/Grafik/js/themes/fusioncharts.theme.ocean.js"></script>
     <script src="Js/bootstrap.min.js"></script>
-    <script src="Js/jquery.sidr.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="Js/morris.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="Js/jquery.sidr.min.js"></script>
     <script src="Js/Grafik/js/fusioncharts-jquery-plugin.js"></script>
+    <script src="Js/mycustom.js"></script>
     
-    <script>
-        function openNav() {
-            document.getElementById("sidebar").style.width = "250px";
-            document.getElementById("content-main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("sidebar").style.width = "0";
-            document.getElementById("content-main").style.marginLeft= "0";
-        }
-    </script>
-    
-    <script>
-        (function () {
-            $("#chart-container").insertFusionCharts({
-                type: "mscombi2d",
-                width: "100%",
-                height: "310",
-                dataFormat: "json",
-                dataSource: {
-                    "chart": {
-                        "caption": "Tahun 2017",
-                        "exportEnabled": "1",
-                        "numberprefix": "Rp.",
-                        "theme": "ocean",
-                    },
-                    "categories": [
-                        {
-                            "category": [
-                                {
-                                    "label": "Jan"
-                        }
-                                , {
-                                    "label": "Feb"
-                        }
-                                , {
-                                    "label": "Mar"
-                        }
-                                , {
-                                    "label": "Apr"
-                        }
-                                , {
-                                    "label": "May"
-                        }
-                                , {
-                                    "label": "Jun"
-                        }
-                                , {
-                                    "label": "Jul"
-                        }
-                                , {
-                                    "label": "Aug"
-                        }
-                                , {
-                                    "label": "Sep"
-                        }
-                                , {
-                                    "label": "Oct"
-                        }
-                                , {
-                                    "label": "Nov"
-                        }
-                                , {
-                                    "label": "Dec"
-                        }
-                    ]
-                }
-            ],
-                    "dataset": [
-                        {
-                            "seriesname": "Pendapatan",
-                            "data": [
-                                {
-                                    "value": "1600000"
-                        }
-                                , {
-                                    "value": "2100000"
-                        }
-                                , {
-                                    "value": "1800000"
-                        }
-                                , {
-                                    "value": "1900000"
-                        }
-                                , {
-                                    "value": "1400000"
-                        }
-                                , {
-                                    "value": "2100000"
-                        }
-                                , {
-                                    "value": "1600000"
-                        }
-                                , {
-                                    "value": "2200000"
-                        }
-                                , {
-                                    "value": "1700000"
-                        }
-                                , {
-                                    "value": "2500000"
-                        }
-                                , {
-                                    "value": "1900000"
-                        }
-                                , {
-                                    "value": "2300000"
-                        }
-                    ]
-                }
-                        , {
-                            "seriesname": "Target Pendapatan",
-                            "renderas": "line",
-                            "showvalues": "0",
-                            "data": [
-                                {
-                                    "value": "1500000"
-                        }
-                                , {
-                                    "value": "1600000"
-                        }
-                                , {
-                                    "value": "1700000"
-                        }
-                                , {
-                                    "value": "1800000"
-                        }
-                                , {
-                                    "value": "1600000"
-                        }
-                                , {
-                                    "value": "1700000"
-                        }
-                                , {
-                                    "value": "1900000"
-                        }
-                                , {
-                                    "value": "1800000"
-                        }
-                                , {
-                                    "value": "2000000"
-                        }
-                                , {
-                                    "value": "2100000"
-                        }
-                                , {
-                                    "value": "1900000"
-                        }
-                                , {
-                                    "value": "2300000"
-                        }
-                    ]
-                }
-                        , {
-                            "seriesname": "Keuntungan",
-                            "renderas": "area",
-                            "showvalues": "0",
-                            "data": [
-                                {
-                                    "value": "400000"
-                        }
-                                , {
-                                    "value": "500000"
-                        }
-                                , {
-                                    "value": "300000"
-                        }
-                                , {
-                                    "value": "400000"
-                        }
-                                , {
-                                    "value": "100000"
-                        }
-                                , {
-                                    "value": "700000"
-                        }
-                                , {
-                                    "value": "100000"
-                        }
-                                , {
-                                    "value": "400000"
-                        }
-                                , {
-                                    "value": "100000"
-                        }
-                                , {
-                                    "value": "800000"
-                        }
-                                , {
-                                    "value": "200000"
-                        }
-                                , {
-                                    "value": "700000"
-                        }
-                    ]
-                }
-            ]
-                }
-            });
-        }());
-    </script>
-    <script>
-        FusionCharts.ready(function () {
-            var btn = document.getElementById("update");
-            btn.addEventListener("click", function () {
-                $("#chart-grap").updateFusionCharts({
-                    "type": "line"
-                });
-            });
-            var cosmetics = {
-                "caption": "Maret",
-                "paletteColors": "#0075c2",
-                "bgColor": "#ffffff",
-                "borderAlpha": "20",
-                "canvasBorderAlpha": "0",
-                "usePlotGradientColor": "0",
-                "plotBorderAlpha": "10",
-                "placevaluesInside": "1",
-                "rotatevalues": "1",
-                "valueFontColor": "#ffffff",
-                "showXAxisLine": "1",
-                "xAxisLineColor": "#999999",
-                "divlineColor": "#999999",
-                "divLineIsDashed": "1",
-                "showAlternateHGridColor": "0",
-                "subcaptionFontBold": "0",
-                "subcaptionFontSize": "14"
-            };
-            var dataArray = [{
-                "label": "F. Wanita",
-                "value": "1287"
-    }, {
-                "label": "F. Pria",
-                "value": "1861"
-    }, {
-                "label": "Komputer",
-                "value": "824"
-    }, {
-                "label": "Laptop",
-                "value": "543"
-    }, {
-                "label": "Handphone",
-                "value": "1204"
-    }, {
-                "label": "Kamera",
-                "value": "672"
-    }, {
-                "label": "Elektronik",
-                "value": "941"
-    }, {
-                "label": "Olahraga",
-                "value": "1151"
-    }, {
-                "label": "Baby & Mom",
-                "value": "425"
-    }];
-            // Using FusionChart"s jQuery method insertFusionCharts() to create FusionCharts.
-            $("#chart-grap").insertFusionCharts({
-                type: "column2d",
-                width: "100%",
-                height: "300",
-                dataFormat: "json",
-                dataSource: {
-                    chart: cosmetics,
-                    data: dataArray
-                }
-            })
-        });
-    </script>
-    <script>
-        var ctx = document.getElementById("grafik-donut");
-        var myDoughnutChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: [
-        "JNE"
-        , "TIKI"
-        , "POS"
-    ],
-                datasets: [
-                    {
-                        data: [2134, 1345, 879],
-                        backgroundColor: [
-                "#025195"
-                , "#2c3848"
-                , "#de7e37"
-            ],
-                        hoverBackgroundColor: [
-                "#054a86"
-                , "#161f2a"
-                , "#d07a3b"
-            ]
-        }]
-            },
-            options: {
-                animation: {
-                    animateScale: true
-                }
-            }
-        });
-    </script>
-
-    <script>
-        Morris.Donut({
-            element: "mydonut-two",
-            data: [
-                {
-                    label: "JNE",
-                    value: 425
-                },
-                {
-                    label: "TIKI",
-                    value: 321
-                },
-                {
-                    label: "POS INDONESIA",
-                    value: 312
-                },
-                {
-                    label: "GOJEK",
-                    value: 123
-                }
-  ]
-        });
-    </script>
-
+  
 </body>
 
 </html>

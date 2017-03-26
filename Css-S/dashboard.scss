@@ -15,9 +15,9 @@ $color-birumuda: #71767c;
 $color-birumid: #2c3848;
 $color-birutua:#1d2939;
 $color-biru:#080c10;
-$color-biruold:#161f2a;
-$color-hijau:#56c44d;
-
+$color-hijaumud:#7ed6ae;
+$color-hijau:#60d6a2;
+$color-hijautua:#53c190;
 .mypadding{
     padding-left: 0.5em !important;
     padding-right: 0.5em !important;
@@ -35,29 +35,51 @@ $color-hijau:#56c44d;
 }
 
 @mixin transide($ease) {
-    -webkit-transition: $ease;
+    -webkit-transition: co$ease;
     -moz-transition: $ease;
     -o-transition: $ease;
     transition: $ease;
 }
 
 .side-left {
-    @include transide(all 0.5s ease);
+    @include transide(all 0.2s ease);
     z-index: 1000;
     position: fixed;
     width: 250px;
     overflow-y: auto;
     top: 0;
+    left: 0;
     bottom: 0;
+    color: $color-font-black;
+    background-color: $color-putih;
+}
+
+.logo-top{
     color: $color-putih;
-    background-color: $color-birutua;
-    transition: 0.5s;
+    text-decoration: none;
+    
+    &:hover{
+        text-decoration: none;
+        color: $color-gray;
+    }
 }
 
 .img-user-left {
     border-radius: 50%;
-    border: 2px solid $color-gray;
+    background-color: $color-birumuda;
     margin: 0 auto;
+}
+
+.name-user{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.pk-user{
+    font-size: 14px;
+    font-weight: 500;
+
 }
 
 .navigasi {
@@ -69,11 +91,18 @@ $color-hijau:#56c44d;
         li {
             padding: 0.5em 0 0.5em 2em;
             &:hover {
-                background-color: $color-birumid;
-                color: $color-graymid;
-                border-left: 5px solid $color-greenday;
+                background-color: $color-hijau;
+                color: $color-putih;
+                border-left: 5px solid $color-hijautua;
             }
+            
         }
+        li.db-active,li:active{
+                background-color:$color-hijau !important;
+                color: $color-putih;
+                border-left: 5px solid $color-hijautua;
+            
+            }
         a {
             font-size: 18;
             font-weight: 400;
@@ -82,47 +111,99 @@ $color-hijau:#56c44d;
     }
 }
 
-.notif-baru {
-    position: absolute;
-    left: 7px;
-    top: 5px;
-    background-color: $color-red;
-    border-radius: 20px;
-    color: $color-putih;
-    font-size: 10px;
-    text-align: center;
-    padding: 0.3em 0.4em 0.3em 0.4em;
+.head-drop-all{
+    padding: 0.7em 1em;
 }
 
-.notifikasi {
+.notifi-baru{
+    position: absolute;
+    background-color: $color-red;
+    border-radius: 50%;
+    color: $color-putih;
+    text-align: center;
+    font-size: 10px;
+    padding: 0.3em 0.3em;
+    margin: 0 auto;
+}
+
+.notifi {
     padding: 0 !important;
     margin: 0 !important;
     border-radius: 0px !important;
     min-width: 300px !important;
 }
 
-.content-notifi {
-    padding: 0.5em 0.5em;
+.content-notifi{
+
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+
+    li{
+        padding: 0.5em 1em 0.5em 1em;
+        margin: 0;
+        border-bottom: 1px solid $color-graymid;
+        &:hover{
+            background-color:$color-gray;
+        }
+    }
+
+    .name-notifi{
+        display: block;
+    }
+
+    .time-notifi{
+        font-size: 14px;
+        color: $color-grayold;
+        padding-left: 0.5em;
+    }
+}
+
+.pesan-baru {
+    position: absolute;
+    background-color: $color-red;
+    border-radius: 20px;
+    color: $color-putih;
+    font-size: 10px;
+    text-align: center;
+    padding: 0.3em 0.3em;
+    margin: 0 auto;
+}
+
+.pesan {
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0px !important;
+    min-width: 300px !important;
+}
+
+.content-pesan {
     ul {
         list-style: none;
         padding: 0;
     }
     li {
         margin: 0;
-        padding: 0.5em;
+        padding: 0.5em 0.5em 0.5em 1em;
         border-bottom: 1px solid $color-gray;
         border-left: 0px !important;
         &:hover {
             background-color: $color-gray;
         }
     }
-    .img-notifi {
+    .img-pesan {
         float: left;
         width: 50px;
         display: block;
-        padding: 0.5em 0.5em;
+        padding: 0.2em 0.5em 0.5em 0;
+
+        img{
+            background-color: $color-hijau;
+            width: 40px;
+        }
     }
-    .new-notifi {
+    .new-pesan {
         background-color: $color-hijau;
         color: $color-putih;
         border-radius: 5px;
@@ -130,16 +211,16 @@ $color-hijau:#56c44d;
         padding: 0.2em 0.4em;
         position: absolute;
         right: 1em;
-        ;
     }
-    .name-notifi {
+    .name-pesan {
         display: block;
         font-weight: 500;
         margin: 0;
         padding: 0;
     }
-    .msg-notifi {
+    .msg-pesan {
         font-size: 14px;
+        color: $color-grayold;
     }
 }
 
@@ -153,9 +234,9 @@ $color-hijau:#56c44d;
 #produk-side {
     li {
         padding-left: 3em !important;
-        background-color: $color-biruold !important;;
+        background-color: $color-gray !important;;
         &:hover {
-            background-color: $color-birutua !important;
+            background-color: $color-hijau !important;
         }
     }
 }
@@ -163,9 +244,9 @@ $color-hijau:#56c44d;
 #transaksi-side {
     li {
         padding-left: 3em !important;
-        background-color: $color-biruold !important;
+        background-color: $color-gray !important;
         &:hover {
-            background-color: $color-birutua !important;
+            background-color: $color-hijau !important;
         }
     }
 }
@@ -173,8 +254,9 @@ $color-hijau:#56c44d;
 .profil-user {
     padding: 0 !important;
     margin: 0 !important;
+    margin-right: 15px !important;
     border-radius: 0px !important;
-    min-width: 250px !important;
+    min-width: 200px !important;
 }
 
 .content-profil {
@@ -185,10 +267,27 @@ $color-hijau:#56c44d;
     }
 }
 
+.added-drop {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-left: 15px !important;
+    border-radius: 0px !important;
+    min-width: 200px !important;
+}
+
+.c-added {
+    display: block;
+    padding: 0.3em 1.5em 0.3em 1em;
+    &:hover {
+        background-color: $color-gray;
+    }
+}
+
 .search-side {
-    background-color: $color-birumid;
+    background-color: $color-gray;
     border: none;
-    color: $color-gray;
+    width: 100%;
+    color: $color-font-black;
     padding: 0.5em 0.7em 0.5em 0.7em;
     margin-top: 0.5em;
     margin-bottom: 1.3em;
@@ -201,11 +300,8 @@ $color-hijau:#56c44d;
     color: $color-red;
 }
 
-.produk-item {
-    display: none;
-}
-
 .header-fixed {
+    @include transide(all 0.2s ease);
     width: calc(100% - 250px);
     margin-left: 250px;
     position: fixed;
@@ -213,6 +309,7 @@ $color-hijau:#56c44d;
 }
 
 .content-main {
+    @include transide(all 0.2s ease);
     width: calc(100% - 250px);
     margin-left: 250px;
     height: 100%;
@@ -244,8 +341,7 @@ $color-hijau:#56c44d;
 
 .added-item {
     float: left;
-    text-align: center;
-    padding: 0.5em 0.5em !important;
+    padding: 0.1em 0.5em !important;
     width: 50px;
     height: 50px;
     border-right: 1px solid $color-gray;
@@ -313,16 +409,22 @@ $color-hijau:#56c44d;
         outline: none;
         color: $color-font-black !important;
     }
+    
+}
+
+.user-drop{
+    padding-top: 0.4em !important;
     img {
         border-radius: 50%;
+        background-color: $color-birumuda;
         border: 1px solid $color-graymid;
-        width: 20px;
+        width: 35px;
         margin-right: 0.3em;
     }
 }
 
 .b-bottom-side {
-    border-bottom: 1px solid $color-birumid;
+    border-bottom: 1px solid $color-graymid;
 }
 
 .top-event {
@@ -330,7 +432,7 @@ $color-hijau:#56c44d;
 }
 
 .date {
-    background-color: $color-birutua;
+    background-color: $color-hijau;
     color: $color-putih;
     text-align: center;
     width: 110px;
@@ -347,9 +449,9 @@ $color-hijau:#56c44d;
 }
 
 .times {
-    background-color: $color-hijau;
+    background-color: $color-gray;
     text-align: center;
-    color: $color-putih;
+    color: $color-font-black;
     padding-top: 1em;
     width: 110px;
     padding: 0.3em 0.5em 0 0.5em;
@@ -361,7 +463,6 @@ $color-hijau:#56c44d;
 
 .header-s {
     background-color: $color-putih;
-    border-radius: 5px 5px 0 0;
     border-bottom: 1px solid $color-gray;
     color: $color-font-black;
     padding: 0.3em 1em;
@@ -372,7 +473,6 @@ $color-hijau:#56c44d;
 .statistik-content {
     height: auto !important;
     margin: 0 !important;
-    border-radius: 5px;
     background-color: $color-putih;
     
     .statistik-header {
@@ -389,10 +489,18 @@ $color-hijau:#56c44d;
     }
 }
 
+.btn-download{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    margin: 0 !important;
+    padding:0 !important;
+
+}
+
 .panel {
     height: auto;
     margin-bottom: 0.7em;
-    border-radius: 5px;
 }
 
 .panel-1 {
@@ -433,7 +541,6 @@ $color-hijau:#56c44d;
 
 .panel-footer {
     padding: 0.5em 1em !important;
-    border-radius: 0 0 5px 5px;
     background-color: $color-putih;
     i {
         position: absolute;
@@ -444,7 +551,6 @@ $color-hijau:#56c44d;
 
 .grafik-produk {
     background-color: $color-putih;
-    border-radius: 5px;
     height: auto;
     .grap-header {
         @extend .header-s;
@@ -463,7 +569,6 @@ $color-hijau:#56c44d;
 }
 
 .grafik-donut {
-    border-radius: 5px;
     background-color: $color-putih;
     height: 400px;
     .grad-header {
@@ -476,7 +581,6 @@ $color-hijau:#56c44d;
 
 .persentase{
     padding: 1em 0.5em;
-    border-radius: 5px;
 }
 
 .head-table-s {
@@ -484,7 +588,6 @@ $color-hijau:#56c44d;
 }
 
 .table-statis {
-    border-radius: 0 0 5px 5px;
     background-color: $color-putih;
 }
 
@@ -495,17 +598,28 @@ $color-hijau:#56c44d;
 
 .chat {
     background-color: $color-hijau;
-    text-align: center;
-    width: 160px;
+    width: 140px;
     border: 3px solid $color-putih;
     border-bottom: 0px;
     border-radius: 10px 10px 0 0;
     position: fixed;
     z-index: 9999;
+    padding: 0.5em 1em;
     color: $color-putih;
-    padding: 0.5em 0.5em;
+    margin: 0 auto;
     bottom: 0;
     right: 50px;
+    
+    &:hover{
+        color: $color-graymid;
+    }
+    
+}
+
+@media (min-width:768px) {
+    #side-search {
+        display: none;
+    }
 }
 
 @media (min-width:576px) {
@@ -514,28 +628,47 @@ $color-hijau:#56c44d;
         -webkit-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
     }
-    #side-search {
-        display: none;
-    }
+    
 }
 
 @media (min-width:992px) {
     .menu-toggle{
         display: none;
     }
+    .tambah-nav-right{
+        display: none;
+    }
 }
 
 @media (max-width: 992px) {
-    #sidebar {
+    .tambah-nav-left{
         display: none;
     }
+    .side-left {
+        left: -250px;
+        
+    }
+    .added-drop{
+        margin-left: 0 !important;
+    }
+    .side-left.show{
+        left: 0;
+        }
+    
     .header-fixed {
         width: 100%;
         margin-left: 0;
     }
+    .header-fixed.push{
+        margin-left: 250px !important;
+    }
     .content-main {
         width: 100%;
         margin-left: 0;
+    }
+    .content-main.push{
+        margin-left: 250px !important;
+        position: fixed;
     }
 }
 
@@ -568,6 +701,31 @@ $color-hijau:#56c44d;
             position: absolute;
             right: 2.3em;
             padding-top: 0.2em;
+        }
+    }
+    
+    .chat {
+        background-color: $color-hijau;
+        text-align: center;
+        width: 60px;
+        height: 50px;
+        border: 3px solid $color-putih;
+        border-radius: 10px;
+        position: fixed;
+        z-index: 9999;
+        color: $color-putih;
+        padding: 0.5em 0.5em !important;
+        bottom: 20px;
+        right: 30px;
+        
+        i{
+            float: none !important;
+            margin: 0 auto !important;
+            padding-right: 10px !important;
+        }
+        
+        h6{
+            display: none;
         }
     }
 }
