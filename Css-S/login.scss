@@ -1,0 +1,210 @@
+$color-white: #E8DFCE;
+$color-greenold: #5c9186;
+$color-greenday: #7bafa4;
+$color-gray: #ECECEC;
+$color-graymid: #d9d9d9;
+$color-grayold: #9f9f9f;
+$color-font-black:#292b2c;
+$color-whitemid: #eaeaea;
+$color-putih: #fdfdfd;
+$color-pold: #ffffff;
+$color-red: #d9534f;
+$color-blue: #025195;
+$color-cyan: #49a8c4;
+$color-birumuda: #71767c;
+$color-birumid: #2c3848;
+$color-birutua:#1d2939;
+$color-biru:#080c10;
+$color-hijaumuda:#8FDBB9;
+$color-hijau:#60d6a2;
+$color-hijautua:#54C795;
+
+body{
+  background-image: url(../img/back-login.jpg);
+  background-repeat: no-repeat;
+}
+
+.back-off{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  margin-top: 0 !important;
+}
+
+.back-active{
+  background-color: rgba(0,0,0,0.3);
+}
+
+.login-content{
+  background-color: rgba(255,255,255, 0.8);
+  border-radius: 10px;
+  padding: 2em 1.5em 2em 1.5em;
+  box-shadow: 0 0 19px -3px;
+}
+
+.login-logo{
+  color: $color-grayold;
+  text-align: center;
+}
+
+.logo-active{
+  color: $color-blue;
+}
+
+.alert-login{
+  background-color: $color-red;
+  padding: 0.5em 0.5em;
+  border:1px solid $color-grayold;
+  color: $color-putih;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.login-text-top{
+  font-size: 16px;
+  color: $color-grayold;
+  text-align: center;
+}
+
+.user-input{
+  width: 100% !important;
+  padding: 0.5em 1em 0.5em 1em !important;
+  margin: 0.5em 0 0.5em 0 !important;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid $color-grayold !important;
+  color: $color-birutua !important;
+  margin-bottom: 1em !important;
+
+  &:focus{
+    outline:none !important;
+  border-bottom: 1px solid $color-birutua !important;
+  }
+}
+
+.pass-input{
+  width: 100% !important;
+  padding: 0.5em 2.3em 0.5em 1em !important;
+  margin: 0.5em 0 0.5em 0 !important;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $color-grayold !important;
+  margin-bottom: 1em !important;
+
+  &:focus{
+    outline:none !important;
+  border-bottom: 1px solid $color-birutua !important;
+  }
+}
+
+.btn-sh{
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  top: 14px;
+}
+.login-lupa{
+  margin-bottom: 1em;
+}
+
+.btn-lp{
+  color:$color-grayold;
+
+  &:hover{
+    color:$color-graymid;
+    text-decoration: none;
+  }
+  &:focus{
+    color: $color-blue;
+    text-decoration: none;
+  }
+}
+
+.btn-login{
+  background-color:transparent;
+  border: 1px solid $color-hijau;
+  color: $color-hijau;
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
+  width: 100%;
+
+  &:hover{
+    background-color:$color-hijau;
+    color: $color-putih;
+    border:1px solid $color-graymid;
+
+  }
+  &:focus{
+    outline: none !important;
+    background-color:$color-hijau;
+    color: $color-putih;
+    border:1px solid $color-graymid;
+  }
+}
+
+@media (min-width: 728px) {
+
+  .container{
+  width: 400px !important;
+  margin-top: 120px !important;
+}
+
+}
+@media (max-width: 728px){
+  body{
+    background-color: $color-hijau !important;
+    background-image: none;
+  }
+  .login-content{
+    background-color: transparent;
+    border-radius: none !important;
+    box-shadow: none;
+  }
+  .back-active{
+    background-color: transparent !important;
+  }
+  .login-text-top{
+    color: $color-gray;
+  }
+  .user-input{
+    border-bottom: 1px solid $color-graymid !important;
+  }
+  .user-input::-webkit-input-placeholder{
+    color: $color-graymid;
+  }
+  .user-input:-moz-input-placeholder{
+    color: $color-graymid;
+  }
+  .user-input:-ms-input-placeholder{
+    color: $color-graymid;
+  }
+  .pass-input{
+    border-bottom: 1px solid $color-graymid !important;
+  }
+  .pass-input::-webkit-input-placeholder{
+    color: $color-graymid;
+  }
+  .pass-input:-moz-input-placeholder{
+    color: $color-graymid;
+  }
+  .pass-input:-ms-input-placeholder{
+    color: $color-graymid;
+  }
+  .btn-lp{
+    color: $color-graymid;
+  }
+  .btn-login{
+    border:1px solid $color-graymid;
+    color: $color-graymid;
+
+    &:hover{
+      color:$color-hijau;
+      border: 1px solid $color-gray;
+      background-color: $color-putih;
+    }
+    &:focus{
+      background-color: $color-putih;
+      color: $color-hijau;
+    }
+  }
+}

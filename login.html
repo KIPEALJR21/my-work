@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>LOGIN</title>
+
+    <link rel="stylesheet" href="Css-S/login.css">
+    <link rel="stylesheet" href="Css_Ext/bootstrap.min.css">
+    <link rel="stylesheet" href="Css_Ext/font-awesome.min.css">
+
+</head>
+<body>
+<div class="back-off">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 px-0">
+          <div class="login-content">
+            <h3 class="login-logo">TOKOKU.COM</h3>
+            <div class="login-text-top">
+              <p>Masuk ke Dashboard</p>
+            </div>
+            <div class="alert-login">
+              <p>uppss..!!! email atau kata sandi yang anda masukkan salah!</p>
+            </div>
+            <form>
+            <input class="user-input" type="text" name="username" placeholder="Username">
+            <div class="input-group">
+            <input class="pass-input" id="pass-field" type="password" placeholder="Password">
+            <span class="btn-sh"><i class="fa fa-eye"></i></span>
+            </div>
+            </form>
+            <div class="login-lupa">
+            <a class="btn-lp" href="#">
+              <span>Lupa Password ?</span>
+            </a>
+            </div>
+            <button class="btn-login" type="submit">LOGIN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="Js/jquery-3.1.1.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+
+    <script>
+      $(".btn-sh").click(function(){
+                if($("#pass-field").attr('type')=='password'){
+$("#pass-field").attr('type','text');
+}else{
+$("#pass-field").attr('type','password');
+}
+});
+    </script>
+    <script>
+      $(document).ready(function(){
+  var formInputs = $('input[type="text"],input[type="password"]');
+  formInputs.focus(function() {
+    $('.back-off').addClass('back-active');
+       $('.login-logo').addClass('logo-active');
+  });
+  formInputs.focusout(function() {
+    if ($.trim($(this).val()).length == 0){
+    $(this).parent().children('p.formLabel').removeClass('formTop');
+    }
+    $('.back-off').removeClass('back-active');
+    $('.login-logo').removeClass('logo-active');
+  });
+});
+    </script>
+
+</body>
+</html>
