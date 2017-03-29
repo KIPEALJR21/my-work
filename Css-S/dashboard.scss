@@ -15,9 +15,9 @@ $color-birumuda: #71767c;
 $color-birumid: #2c3848;
 $color-birutua:#1d2939;
 $color-biru:#080c10;
-$color-hijaumud:#7ed6ae;
+$color-hijaumuda:#8FDBB9;
 $color-hijau:#60d6a2;
-$color-hijautua:#53c190;
+$color-hijautua:#54C795;
 .mypadding{
     padding-left: 0.5em !important;
     padding-right: 0.5em !important;
@@ -263,7 +263,8 @@ $color-hijautua:#53c190;
     display: block;
     padding: 0.3em 1.5em 0.3em 1em;
     &:hover {
-        background-color: $color-gray;
+        background-color: $color-hijau;
+        color: $color-putih !important;
     }
 }
 
@@ -279,7 +280,8 @@ $color-hijautua:#53c190;
     display: block;
     padding: 0.3em 1.5em 0.3em 1em;
     &:hover {
-        background-color: $color-gray;
+        background-color: $color-hijau;
+        color: $color-putih !important;
     }
 }
 
@@ -319,9 +321,8 @@ $color-hijautua:#53c190;
 }
 
 .header {
-    background-color: $color-putih;
+    background-color: $color-hijau;
     height: 50px;
-    border-bottom: 1px solid $color-gray;
     transition: 0.2s;
 }
 
@@ -331,12 +332,16 @@ $color-hijautua:#53c190;
     padding: 0.7em 0.5em;
     width: 50px;
     height: 50px;
-    border-right: 1px solid $color-gray;
-    color: $color-grayold;
+    border-right: 1px solid $color-hijautua;
+    color: $color-putih !important;
     
     &:hover{
-        color: $color-font-black !important;
+        color: $color-graymid!important;
     }
+}
+
+.tambah-nav-left{
+    border-right: 1px solid $color-hijautua;
 }
 
 .added-item {
@@ -344,15 +349,11 @@ $color-hijautua:#53c190;
     padding: 0.1em 0.5em !important;
     width: 50px;
     height: 50px;
-    border-right: 1px solid $color-gray;
-    
-    h5{
-        color: $color-graymid;
+    border-right: 1px solid $color-hijautua;
     
      &:hover{
         color: $color-font-black !important;
     }
-    } 
    
 }
 
@@ -363,10 +364,11 @@ $color-hijautua:#53c190;
     margin: 0;
     .input-search {
         display: block;
+        color: $color-putih;
         width: 100%;
         height: 50px;
         border: none;
-        border-right: 1px solid $color-gray;
+        border-right: 1px solid $color-hijautua;
         background-color: transparent;
         padding: 0 3.6em 0 1em;
         background-image: url(../img/search.png);
@@ -383,12 +385,22 @@ $color-hijautua:#53c190;
     }
 }
 
+.search-head::-webkit-input-placeholder{
+    color:$color-putih !important;
+}
+.search-head::-ms-input-placeholder{
+    color:$color-putih !important;
+}
+.search-head:-moz-input-placeholder{
+    color:$color-putih !important;
+}
+
 .header-right {
     right: 0;
     float: right;
     
     .right-nav {
-        border-left: 1px solid $color-gray;
+        border-left: 1px solid $color-hijautua;
         height: 50px;
     }
 }
@@ -396,18 +408,18 @@ $color-hijautua:#53c190;
 .btn-head {
     background-color: transparent;
     border-radius: 0;
-    color: $color-grayold !important;
+    color: $color-putih !important;
     height: 50px;
     margin: 0 auto !important;
     padding-top: 0.8em !important;
     
     &:hover{
-        color: $color-font-black !important;
+        color: $color-graymid!important;
     }
     
     &:focus {
         outline: none;
-        color: $color-font-black !important;
+        color: $color-graymid !important;
     }
     
 }
@@ -416,8 +428,7 @@ $color-hijautua:#53c190;
     padding-top: 0.4em !important;
     img {
         border-radius: 50%;
-        background-color: $color-birumuda;
-        border: 1px solid $color-graymid;
+        background-color: $color-putih;
         width: 35px;
         margin-right: 0.3em;
     }
