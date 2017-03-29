@@ -22,15 +22,25 @@ body {
   text-align: center; }
 
 .logo-active {
-  color: #025195; }
+  color: #60d6a2; }
 
 .alert-login {
-  background-color: #d9534f;
-  padding: 0.5em 0.5em;
-  border: 1px solid #9f9f9f;
+  background-color: #f9a728;
   color: #fdfdfd;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-bottom: 1em; }
+  .alert-login p {
+    margin: 0;
+    padding: 0.5em 1em; }
+  .alert-login .warning {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 3px 3px;
+    bottom: 0;
+    padding: 0.3em 1em; }
+  .alert-login i {
+    float: right;
+    margin-top: 4px !important; }
 
 .login-text-top {
   font-size: 16px;
@@ -39,34 +49,36 @@ body {
 
 .user-input {
   width: 100% !important;
-  padding: 0.5em 1em 0.5em 1em !important;
-  margin: 0.5em 0 0.5em 0 !important;
+  padding: 0.8em 1em 0.8em 1em !important;
+  margin: 0.5em 0 0.3em 0 !important;
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid #9f9f9f !important;
+  border-radius: 5px;
+  border: 1px solid #9f9f9f !important;
   color: #1d2939 !important;
   margin-bottom: 1em !important; }
   .user-input:focus {
     outline: none !important;
-    border-bottom: 1px solid #1d2939 !important; }
+    border: 1px solid #60d6a2 !important; }
 
 .pass-input {
   width: 100% !important;
-  padding: 0.5em 2.3em 0.5em 1em !important;
+  padding: 0.8em 2.3em 0.8em 1em !important;
   margin: 0.5em 0 0.5em 0 !important;
   background-color: transparent;
+  border-radius: 5px;
   border: none;
-  border-bottom: 1px solid #9f9f9f !important;
+  border: 1px solid #9f9f9f !important;
   margin-bottom: 1em !important; }
   .pass-input:focus {
     outline: none !important;
-    border-bottom: 1px solid #1d2939 !important; }
+    border: 1px solid #60d6a2 !important; }
 
 .btn-sh {
   position: absolute;
   z-index: 10;
-  right: 10px;
-  top: 14px; }
+  right: 18px;
+  top: 20px; }
 
 .login-lupa {
   margin-bottom: 1em; }
@@ -74,7 +86,7 @@ body {
 .btn-lp {
   color: #9f9f9f; }
   .btn-lp:hover {
-    color: #d9d9d9;
+    color: #292b2c;
     text-decoration: none; }
   .btn-lp:focus {
     color: #025195;
@@ -110,12 +122,17 @@ body {
     background-color: transparent;
     border-radius: none !important;
     box-shadow: none; }
+  .logo-active {
+    color: #fdfdfd; }
   .back-active {
     background-color: transparent !important; }
   .login-text-top {
     color: #ECECEC; }
   .user-input {
-    border-bottom: 1px solid #d9d9d9 !important; }
+    border: 1px solid #54C795 !important;
+    color: #fdfdfd !important; }
+    .user-input:focus {
+      border: 1px solid #fdfdfd !important; }
   .user-input::-webkit-input-placeholder {
     color: #d9d9d9; }
   .user-input:-moz-input-placeholder {
@@ -123,13 +140,18 @@ body {
   .user-input:-ms-input-placeholder {
     color: #d9d9d9; }
   .pass-input {
-    border-bottom: 1px solid #d9d9d9 !important; }
+    border: 1px solid #54C795 !important;
+    color: #fdfdfd !important; }
+    .pass-input:focus {
+      border: 1px solid #fdfdfd !important; }
   .pass-input::-webkit-input-placeholder {
     color: #d9d9d9; }
   .pass-input:-moz-input-placeholder {
     color: #d9d9d9; }
   .pass-input:-ms-input-placeholder {
     color: #d9d9d9; }
+  .btn-sh {
+    color: #ECECEC; }
   .btn-lp {
     color: #d9d9d9; }
   .btn-login {
